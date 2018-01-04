@@ -7,10 +7,30 @@
 nav
   transitions()
   margin-bottom 33px
+  +mobile()
+    position fixed
+    top 0
+    left 0
+    right 0
+    background $blue
+    z-index 4000
 
 .nav-panel
+  +mobile()
+    background $white
+    display none
+    height calc(100vh - 85px)
+
+.menu-panel
   display flex
   justify-content space-between
+  height 100%
+  +mobile()
+    flex-wrap wrap
+    justify-content center
+    height auto
+
+
 
 .menu
   list-flex(row)
@@ -19,13 +39,38 @@ nav
   height 100%
   flex 1 1 51%
   max-width 51%
+  +portrait()
+    flex 1 1 50%
+    max-width 50%
+    flex-wrap wrap
+    padding: 30px 0;
+  +mobile()
+    flex 1 1 100%
+    max-width 100%
+    height auto
+    flex-wrap wrap
+    justify-content flex-start
+    align-items flex-start
+    padding 25px 0
   li
+    +portrait()
+      flex 1 1 50%
+      max-width 50%
+    +mobile()
+      flex 1 1 100%
+      max-width 100%
+
     a
       font-size: $s14
       font-weight: 500;
       display block
       color $white
       position relative
+      +mobile()
+        color $darkred
+        font-family $slave-font, sans-serif
+        font-size: 1.125em;
+        margin-bottom 1rem
       &:after
         pseudo(block, absolute)
         bottom -5px
@@ -47,12 +92,37 @@ nav
   height 100%
   flex 1 1 44%
   max-width 44%
+  +portrait()
+    padding 0
+    flex 1 1 45%
+    max-width 45%
+  +mobile()
+    flex 1 1 100%
+    max-width 100%
+    height auto
+    flex-wrap wrap
+    padding 20px 0
+    justify-content flex-start
+    align-items flex-start
+
   li
     width 100%
+    +mobile()
+      flex 1 1 100%
+      max-width 100%
     .button
       max-width 146px
+      +portrait()
+        max-width 110px
+      +mobile()
+        max-width 100%
+        margin-bottom 1rem
+      &:hover
+        background: #f2d300;
+        color: #a39300;
     .active
       background $yellow
+
 
 .nav-mobile
   display none
@@ -62,10 +132,10 @@ nav
 
 
 .nav-icon
-  width 30px
+  width 35px
   height 22px
   position relative
-  margin 14px 0
+  margin 31px 0
   cursor pointer
   transitions()
   transform rotate(0deg)
@@ -73,9 +143,9 @@ nav
   span
     display block
     position absolute
-    height 3px
+    height 2px
     width 100%
-    background $black
+    background $white
     border-radius 2px
     opacity 1
     left 0
@@ -87,18 +157,3 @@ nav
       top 9px
     &:nth-child(4)
       top 18px
-
-.nav-icon.open
-  span
-    &:nth-child(1)
-      top 18px
-      width 0%
-      left 50%
-    &:nth-child(2)
-      transform rotate(45deg)
-    &:nth-child(3)
-      transform rotate(-45deg)
-    &:nth-child(4)
-      top 18px
-      width 0%
-      left 50%

@@ -26,17 +26,29 @@ footer
   flex-direction row
   align-items center
   margin-bottom 95px
+  +mobile()
+    flex-wrap wrap
   img
     margin-right 29px
+    +mobile()
+      margin-bottom 20px
   p
     margin-bottom 0
 
 .footer-flex-partners
   align-items flex-start
+  +mobile()
+    margin-top 80px
+    flex-wrap wrap
   h6
     margin-right: 40px;
     margin-bottom 0
     margin-top 20px
+    +mobile()
+      flex 1 1 100%
+      max-width 100%
+      margin-right 0
+      margin-bottom 45px
   p
     font-size: $s12
     font-weight: 500;
@@ -44,6 +56,10 @@ footer
     margin-bottom 0
     color $darkred
     margin-left 15px
+    +mobile()
+      margin-right 15px
+      text-align center
+
 
 .footer-partners
   display flex
@@ -51,6 +67,9 @@ footer
   align-items center
   height: 66px
   margin-bottom 22px
+  +mobile()
+    flex-wrap wrap
+    height auto
   li
     position relative
     height 100%
@@ -58,6 +77,13 @@ footer
     align-items center
     padding-right 15px
     padding-left 15px
+    +mobile()
+      flex 1 1 100%
+      max-width 100%
+      padding 0
+      display flex
+      justify-content center
+      margin-bottom 30px
     img
       margin 0
     &:after
@@ -67,6 +93,8 @@ footer
       width: 1px;
       height: 66px;
       border: solid 1px #16275d;
+      +mobile()
+        display none
     &:last-child
       &:after
         display none

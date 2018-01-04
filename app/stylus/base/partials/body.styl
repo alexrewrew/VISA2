@@ -8,7 +8,28 @@ body
   overflow-x hidden
   font(1rem, $black, 400, normal)
   background $white
+  +mobile()
+    padding-top 85px
 
 +displays()
   .container
     max-width 1170px
+
+body.open
+  nav
+    background $white
+  .nav-icon
+    span
+      background $pink
+      &:nth-child(1)
+        top 18px
+        width 0%
+        left 50%
+      &:nth-child(2)
+        transform rotate(45deg)
+      &:nth-child(3)
+        transform rotate(-45deg)
+      &:nth-child(4)
+        top 18px
+        width 0%
+        left 50%

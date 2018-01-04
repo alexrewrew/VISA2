@@ -1,9 +1,16 @@
 .advantage
   list-flex(row)
+  +mobile()
+    padding-left 65px
   &-image
     flex 1 1 97px
     max-width 97px
+    +mobile()
+      max-width 70px
+      flex 1 1 70px
     img
       position relative
       left -65px
       top -9px
+      +portrait()
+        left: -25px;

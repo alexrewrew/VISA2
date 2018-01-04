@@ -1,15 +1,6 @@
 @import '../../utilities/vars'
 @import '../../utilities/mixins'
 
-section {
-}
-
-article {
-}
-
-aside {
-}
-
 main
   background $white
   transitions()
@@ -19,6 +10,10 @@ main
 
 .section
   background $yellow2
+  position relative
+  .container
+    position relative
+    z-index 2
 
 .container-double
   position relative
@@ -26,7 +21,7 @@ main
     pseudo(block, absolute)
     background $yellow2
     bottom 0
-    height 290px
+    height 396px
     left 0
     right 0
     z-index 1
@@ -35,6 +30,11 @@ main
   position relative
   padding-top 219px
   z-index 10
+  padding-bottom 109px
+  +mobile()
+    padding-top 100px
+    img
+      display none
   .row
     padding-top 106px
     padding-bottom 106px
@@ -48,22 +48,57 @@ main
     .button
       margin 0
       max-width: 263px
+      &:hover
+        background $pink2
+        color $white
 
-#section1
+.ornament
+  position absolute
+  z-index 1
+
+#section1-1
   background $blue
+  +mobile()
+    padding-top 80px
 
-#section11
+#section1-2
+  .ornament
+    bottom: -350px;
+    right: -70px;
+
+#section1-4
+  .ornament
+    top: -100px;
+    left: 5px;
+
+#section1-5
+  .ornament
+    bottom: -280px;
+    right: 10px;
+
+#section1-7
+  .ornament
+    bottom: -130px;
+    right: 200px;
+
+#section1-9
+  .ornament
+    top: -170px;
+    left: -50px;
+
+#section1-11
   background $green
   h3
     text-align center
     color $white
   .container-double
+    padding-top 109px
     margin-bottom 179px
     &:after
       background $yellow2
       top 0
       bottom auto
-      height 210px
+      height 319px
     .container-white
       padding-top 0
       .row
@@ -73,7 +108,7 @@ main
           color $blue
   .container-double-last
     background $blue
-    margin-bottom 192px
+    margin-bottom 83px
     &:after
       background $green
     .container-white
@@ -82,6 +117,12 @@ main
         .button
           margin 0 auto 44px
           max-width 360px
+  .ornament.ornament3
+    top: 850px
+    left: -180px;
+  .ornament.ornament4
+    top: 1250px
+    right: -150px;
 
 .back-blue
   background $blue

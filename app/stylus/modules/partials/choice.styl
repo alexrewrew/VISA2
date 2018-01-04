@@ -4,6 +4,18 @@
   z-index 10
   transitions()
 
+  +portrait()
+    img
+      max-width 500px
+  +mobile()
+    position static
+    height 150px
+    margin-top 80px
+    img
+      width 100%
+
+
+
 .choice1
   left -125px
 
@@ -20,21 +32,6 @@
 .choice2.transform
   transform translateX(220px)
 
-.button-choice
-  position relative
-  z-index: 20
-  margin 0 auto
-  max-width: 361px
-  font-size $s18
-  font-weight 700
-  background $pink
-  color $white
-  padding-top 15px
-  padding-bottom 18px
-
-.button-choice.opacity
-  background $pink2
-
 .choice-description
   position absolute
   max-width 292px
@@ -44,6 +41,8 @@
   opacity 0
 
   transitions()
+  +portrait()
+    display none
   p
     color $white
     font-weight: 500;

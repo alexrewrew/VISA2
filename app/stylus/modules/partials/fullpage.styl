@@ -1,9 +1,25 @@
 #fp-nav.right
   right: 109px
+  opacity 0
+  +tablet()
+    right 30px
+  +portrait()
+    right 30px
+
+#fp-nav.right.visible
+  opacity 1
 
 #fp-nav
   ul
     li
+
+      width 18px
+      height 18px
+      padding 0
+      margin 0
+      margin-bottom 12px
+      margin-top 12px
+
       &:first-child, &:last-child
         display none
 
@@ -31,54 +47,24 @@
           width 250px
 
 
-#fp-nav ul li
-  width 18px
-  height 18px
-  padding 0
-  margin 0
-  margin-bottom 12px
-  margin-top 12px
 
 #fp-nav ul li a
   width 18px
   height 18px
   padding 0
   margin 0
+  span
+    background $white
+    border 4px solid $trans
+    left auto
+    right auto
+    top auto
+    bottom auto
+    width 12px
+    height 12px
+    margin 3px
 
-#fp-nav ul li a span
-  background $white
-  border 4px solid $trans
-  left auto
-  right auto
-  top auto
-  bottom auto
-  width 12px
-  height 12px
-  margin 3px
-
-#fp-nav ul li a.active span
-  border 4px solid $white
-  background $trans
-  left auto
-  right auto
-  top auto
-  bottom auto
-  width 18px
-  height 18px
-  margin 0
-
-#fp-nav ul li:hover a span
-  border 4px solid $white
-  background $trans
-  left auto
-  right auto
-  top auto
-  bottom auto
-  width 18px
-  height 18px
-  margin 0
-
-#fp-nav ul li:hover a.active span
+#fp-nav ul li a.active span, #fp-nav ul li:hover a span, #fp-nav ul li:hover a.active span
   border 4px solid $white
   background $trans
   left auto

@@ -6,12 +6,18 @@ h1
   margin-bottom .3rem
   font-family: $slave-font, sans-serif
   display inline-block
+  +mobile()
+    font-size: 1.5rem;
+    font-weight 700
 
 h2
   font(2.5rem, $white, 900, 1.28)
   margin-bottom .3rem
   font-family: $slave-font, sans-serif
   display inline-block
+  +mobile()
+    font-size: 1.5rem;
+    font-weight 700
 
 
 h3
@@ -24,11 +30,16 @@ h4
   font($s28, $black, 700, 1.61)
   margin-bottom 2.5rem
   font-family: $slave-font, sans-serif
+  +mobile()
+    font-size 1.25rem
 
 h5
   font($s24, $white, 500, 2.08)
   margin-bottom 1.125rem
   font-family: $slave-font, sans-serif
+  +mobile()
+    font-size: 1.125em;
+    line-height: 1.2;
 
 h6
   font($s20, $blue, 700, normal)
