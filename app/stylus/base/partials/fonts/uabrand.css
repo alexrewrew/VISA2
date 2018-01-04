@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'UA-brand';
+    src: url('../fonts/Uabrand/UA-brand-Black.eot');
+    src: url('../fonts/Uabrand/UA-brand-Black.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Uabrand/UA-brand-Black.woff') format('woff'),
+    url('../fonts/Uabrand/UA-brand-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'UA-brand';
+    src: url('../fonts/Uabrand/UA-brand-Bold.eot');
+    src: url('../fonts/Uabrand/UA-brand-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Uabrand/UA-brand-Bold.woff') format('woff'),
+    url('../fonts/Uabrand/UA-brand-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'UA-brand';
+    src: url('../fonts/Uabrand/UA-brand.eot');
+    src: url('../fonts/Uabrand/UA-brand.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Uabrand/UA-brand.woff') format('woff'),
+    url('../fonts/Uabrand/UA-brand.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

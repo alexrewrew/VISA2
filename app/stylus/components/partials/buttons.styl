@@ -1,0 +1,31 @@
+@import "../../utilities/vars"
+@import "../../utilities/mixins"
+
+button
+  border none
+  cursor pointer
+  transitions()
+  &:focus
+    outline none
+
+.button
+  display block
+  max-width 290px
+  width 100%
+  text-align center
+
+  background $white
+  color $darkred
+
+  padding-top 10px
+  padding-bottom 11px
+
+  box-shadow: 0 10px 15px 0 rgba(0,111,184,.3)
+
+  font-family $slave-font, sans-serif
+
+  &:hover
+    color $black
+    background $yellow
+    transform: translateY(10px)
+    box-shadow: 0 10px 15px 0 rgba(0,111,184,0)

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="58px" viewBox="0 0 100 58" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47 (45396) - http://www.bohemiancoding.com/sketch -->
+    <title>eye</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Tourist_ALL" transform="translate(-553.000000, -2090.000000)" fill-rule="nonzero" fill="#FFFFFF">
+            <g id="Page" transform="translate(0.000000, 1750.000000)">
+                <g id="eye" transform="translate(553.000000, 340.000000)">
+                    <path d="M91.167,29.178 C76.631,14.641 61.807,7.71 47.118,8.566 C24.88,9.864 9.951,28.445 9.802,28.634 L0,24.888 C0.747,23.943 18.616,1.714 46.39,0.093 C64.8,-0.974 82.834,7.176 100,24.344 L91.167,29.178 Z" id="Shape"></path>
+                    <path d="M50.242,57.326 C38.935,57.326 29.736,48.127 29.736,36.82 C29.736,25.513 38.935,16.314 50.242,16.314 C61.549,16.314 70.746,25.513 70.746,36.82 C70.746,48.127 61.549,57.326 50.242,57.326 Z M50.242265,24.561 C43.4825183,24.561 37.98353,30.0599882 37.98353,36.821265 C37.98353,43.5810118 43.4825183,49.08 50.242265,49.08 C57.0004817,49.08 62.49947,43.5810118 62.49947,36.821265 C62.49947,30.0584582 57.0004817,24.561 50.242265,24.561 Z" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

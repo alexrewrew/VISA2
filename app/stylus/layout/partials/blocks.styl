@@ -1,0 +1,87 @@
+@import '../../utilities/vars'
+@import '../../utilities/mixins'
+
+section {
+}
+
+article {
+}
+
+aside {
+}
+
+main
+  background $white
+  transitions()
+  +mobile()
+    position relative
+    z-index 100
+
+.section
+  background $yellow2
+
+.container-double
+  position relative
+  &:after
+    pseudo(block, absolute)
+    background $yellow2
+    bottom 0
+    height 290px
+    left 0
+    right 0
+    z-index 1
+
+.container-white
+  position relative
+  padding-top 219px
+  z-index 10
+  .row
+    padding-top 106px
+    padding-bottom 106px
+    background $white
+    box-shadow: 0 7px 14px 0 rgba(0, 0, 0, 0.17);
+    p
+      font-weight: 300;
+      line-height: 1.75;
+      color $darkred
+      margin-bottom 2.938em
+    .button
+      margin 0
+      max-width: 263px
+
+#section1
+  background $blue
+
+#section11
+  background $green
+  h3
+    text-align center
+    color $white
+  .container-double
+    margin-bottom 179px
+    &:after
+      background $yellow2
+      top 0
+      bottom auto
+      height 210px
+    .container-white
+      padding-top 0
+      .row
+        padding-top 80px
+        padding-bottom 96px
+        h3
+          color $blue
+  .container-double-last
+    background $blue
+    margin-bottom 192px
+    &:after
+      background $green
+    .container-white
+      .row
+        padding 140px 0
+        .button
+          margin 0 auto 44px
+          max-width 360px
+
+.back-blue
+  background $blue

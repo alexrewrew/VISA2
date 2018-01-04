@@ -1,0 +1,104 @@
+@import '../../utilities/vars'
+@import '../../utilities/mixins'
+
+//@import "../libs/rew-sidenav/sidenav.styl"
+//@import "../libs/rew-downnav/downnav.styl"
+
+nav
+  transitions()
+  margin-bottom 33px
+
+.nav-panel
+  display flex
+  justify-content space-between
+
+.menu
+  list-flex(row)
+  justify-content space-between
+  align-items center
+  height 100%
+  flex 1 1 51%
+  max-width 51%
+  li
+    a
+      font-size: $s14
+      font-weight: 500;
+      display block
+      color $white
+      position relative
+      &:after
+        pseudo(block, absolute)
+        bottom -5px
+        left 0
+        right 0
+        height 2px
+        background $trans
+        transitions()
+      &:hover
+        color $blue2
+        &:after
+          background $blue2
+
+.menu-buttons
+  list-flex(row)
+  padding 0 34px
+  align-items center
+  justify-content space-between
+  height 100%
+  flex 1 1 44%
+  max-width 44%
+  li
+    width 100%
+    .button
+      max-width 146px
+    .active
+      background $yellow
+
+.nav-mobile
+  display none
+  +mobile()
+    display block
+
+
+
+.nav-icon
+  width 30px
+  height 22px
+  position relative
+  margin 14px 0
+  cursor pointer
+  transitions()
+  transform rotate(0deg)
+  float right
+  span
+    display block
+    position absolute
+    height 3px
+    width 100%
+    background $black
+    border-radius 2px
+    opacity 1
+    left 0
+    transform rotate(0deg)
+    transitions()
+    &:nth-child(1)
+      top 0px
+    &:nth-child(2), &:nth-child(3)
+      top 9px
+    &:nth-child(4)
+      top 18px
+
+.nav-icon.open
+  span
+    &:nth-child(1)
+      top 18px
+      width 0%
+      left 50%
+    &:nth-child(2)
+      transform rotate(45deg)
+    &:nth-child(3)
+      transform rotate(-45deg)
+    &:nth-child(4)
+      top 18px
+      width 0%
+      left 50%

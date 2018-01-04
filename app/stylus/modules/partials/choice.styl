@@ -1,0 +1,65 @@
+.choice
+  height 510px
+  position relative
+  z-index 10
+  transitions()
+
+.choice1
+  left -125px
+
+.choice2
+  left 20px
+  top -25px
+
+.choice.transform
+  opacity .6
+
+.choice1.transform
+  transform translateX(-220px)
+
+.choice2.transform
+  transform translateX(220px)
+
+.button-choice
+  position relative
+  z-index: 20
+  margin 0 auto
+  max-width: 361px
+  font-size $s18
+  font-weight 700
+  background $pink
+  color $white
+  padding-top 15px
+  padding-bottom 18px
+
+.button-choice.opacity
+  background $pink2
+
+.choice-description
+  position absolute
+  max-width 292px
+  z-index 30
+  top 150px
+
+  opacity 0
+
+  transitions()
+  p
+    color $white
+    font-weight: 500;
+    line-height: 1.75;
+  img
+    position absolute
+    top 160px
+
+.choice-description1
+  right -292px
+  img
+    left -225px
+.choice-description2
+  left -194px
+  img
+    right -125px
+
+.choice-description.active
+  opacity 1

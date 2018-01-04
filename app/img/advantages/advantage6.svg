@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="84px" height="96px" viewBox="0 0 84 96" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47 (45396) - http://www.bohemiancoding.com/sketch -->
+    <title>hotel</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Tourist_ALL" transform="translate(-575.000000, -6625.000000)">
+            <g id="Page-Copy-5" transform="translate(0.000000, 6300.000000)">
+                <g id="hotel" transform="translate(575.000000, 328.000000)">
+                    <g id="Group">
+                        <path d="M57.9175719,92.8760849 L0.0710645054,92.8760849 L0.0710645054,12.0942121 L34.6808106,12.0942121 L30.7758259,31.0064444 L42.018475,46.0560226 L57.9175719,49.9507539 L57.9175719,92.8760849 Z M5.59379178,87.5991626 L52.5369736,87.5991626 L52.5369736,49.5725377 L42.6017502,44.9739581 L33.4332714,33.8292385 L31.9357571,17.6189646 L5.59379178,17.6189646 L5.59379178,87.5991626 Z" id="Shape" fill="#FFFFFF" fill-rule="nonzero"></path>
+                        <rect id="Rectangle-path" fill="#FFFFFF" fill-rule="nonzero" x="11.9659091" y="22.125948" width="5.52272727" height="5.49781441"></rect>
+                        <rect id="Rectangle-path" fill="#FFFFFF" fill-rule="nonzero" x="11.9659091" y="35.0616073" width="5.52272727" height="5.49781441"></rect>
+                        <rect id="Rectangle-path" fill="#FFFFFF" fill-rule="nonzero" x="11.9659091" y="47.9081262" width="5.52272727" height="5.49781441"></rect>
+                        <rect id="Rectangle-path" fill="#FFFFFF" fill-rule="nonzero" x="26.6931818" y="47.9081262" width="5.52272727" height="5.49781441"></rect>
+                        <rect id="Rectangle-path" fill="#FFFFFF" fill-rule="nonzero" x="11.9659091" y="60.7992153" width="5.52272727" height="5.49781441"></rect>
+                        <rect id="Rectangle-path" fill="#FFFFFF" fill-rule="nonzero" x="26.6931818" y="60.7992153" width="5.52272727" height="5.49781441"></rect>
+                        <rect id="Rectangle-path" fill="#FFFFFF" fill-rule="nonzero" x="40.5" y="60.7722772" width="5.52272727" height="5.52475248"></rect>
+                        <path d="M40.5,92.8760849 L18.4090909,92.8760849 L18.4090909,73.6633663 L40.5,73.6633663 L40.5,92.8760849 Z M23.9318182,88.8170598 L34.9772727,88.8170598 L34.9772727,79.1881188 L23.9318182,79.1881188 L23.9318182,88.8170598 Z" id="Shape" fill="#FFFFFF" fill-rule="nonzero"></path>
+                        <ellipse id="Oval-8" stroke="#FFFFFF" stroke-width="6" cx="56.1477273" cy="24.8613861" rx="24.8522727" ry="24.8613861"></ellipse>
+                        <polygon id="Rectangle-2-Copy" fill="#FFFFFF" transform="translate(54.533600, 23.948311) rotate(37.000000) translate(-54.533600, -23.948311) " points="58.0413554 9.47139893 63.3794758 9.47139893 63.3822643 38.4252239 45.6849359 32.7071942 47.3347629 27.6274507 58.0460093 31.0957006"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

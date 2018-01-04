@@ -1,0 +1,72 @@
+@import "../../utilities/vars"
+@import "../../utilities/mixins"
+
+footer
+  background $white
+  padding-top 72px
+  padding-bottom 70px
+  p
+    font-size: $s12
+    font-weight: 500;
+    line-height: 2.33;
+    color: $darkred
+  .button
+    background $yellow
+  &:after
+    pseudo(block, absolute)
+    bottom 0
+    left 0
+    right 0
+    height 70px
+    background $blue
+
+
+.footer-flex
+  display flex
+  flex-direction row
+  align-items center
+  margin-bottom 95px
+  img
+    margin-right 29px
+  p
+    margin-bottom 0
+
+.footer-flex-partners
+  align-items flex-start
+  h6
+    margin-right: 40px;
+    margin-bottom 0
+    margin-top 20px
+  p
+    font-size: $s12
+    font-weight: 500;
+    line-height: 2.33;
+    margin-bottom 0
+    color $darkred
+    margin-left 15px
+
+.footer-partners
+  display flex
+  flex-direction row
+  align-items center
+  height: 66px
+  margin-bottom 22px
+  li
+    position relative
+    height 100%
+    display flex
+    align-items center
+    padding-right 15px
+    padding-left 15px
+    img
+      margin 0
+    &:after
+      pseudo(block, absolute)
+      right 0
+      top 0
+      width: 1px;
+      height: 66px;
+      border: solid 1px #16275d;
+    &:last-child
+      &:after
+        display none

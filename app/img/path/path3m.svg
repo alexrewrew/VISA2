@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="112px" height="118px" viewBox="0 0 112 118" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>Strelki</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Extra-Small-Devices" transform="translate(-50.000000, -3375.000000)">
+            <g id="Strelki" transform="translate(50.000000, 3375.000000)">
+                <path d="M16.9705627,111.363961 L17.2279221,111.106602 L6.62132034,100.5 L4.5,102.62132 L13.2426407,111.363961 L4.5,120.106602 L6.62132034,122.227922 L17.2279221,111.62132 L16.9705627,111.363961 Z" id="Combined-Shape-Copy-2" fill="#FFE600" transform="translate(10.863961, 111.363961) rotate(-270.000000) translate(-10.863961, -111.363961) "></path>
+                <path d="M110,0.578609251 C111.282761,55.5431476 64.1346765,27.3210843 45,29.9810064 C16.4535504,33.9492645 11.2545893,57.8399351 11.2545893,74.2985522 C11.2545893,77.2202529 11.2545893,85.4276728 11.2545893,98.9208121" id="Path-4" stroke="#FFE600" stroke-width="3" stroke-dasharray="10"></path>
+            </g>
+        </g>
+    </g>
+</svg>
