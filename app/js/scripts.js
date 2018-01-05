@@ -6,6 +6,7 @@
             // anchors: ['screen1', 'screen2', 'screen3', 'screen4', 'screen5', 'screen6', 'screen7', 'screen8', 'screen9', 'screen10', 'screen11'],
             scrollOverflow: true,
             css3: true,
+            // menu: '.menu',
             scrollingSpeed: 1000,
             navigation: true,
             navigationPosition: 'right',
@@ -198,29 +199,14 @@
 
     $(document).ready(function () {
 
-        //  ----- FULLPAGE -----
-
-
-        // $(function () {
-        //     $('.overflow-first').slimScroll({
-        //         height: 'auto'
-        //     });
+        // $(".smooth").click(function (event) {
+        //     event.preventDefault();
+        //     var id = $(this).attr("href"),
+        //         top = $(id).offset().top - 70;
+        //     $("body,html").animate({
+        //         scrollTop: top
+        //     }, 1500);
         // });
-        //
-        // $(function () {
-        //     $('.overflow-second').slimScroll({
-        //         height: 'auto'
-        //     });
-        // });
-
-        $(".smooth").click(function (event) {
-            event.preventDefault();
-            var id = $(this).attr("href"),
-                top = $(id).offset().top - 70;
-            $("body,html").animate({
-                scrollTop: top
-            }, 1500);
-        });
 
         $('#menu-trigger').click(function () {
            $('body').toggleClass('open');
