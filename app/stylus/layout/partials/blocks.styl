@@ -40,6 +40,8 @@ main
     padding-bottom 106px
     background $white
     box-shadow: 0 7px 14px 0 rgba(0, 0, 0, 0.17);
+    position relative
+    z-index 10
     p
       font-weight: 300;
       line-height: 1.75;
@@ -51,6 +53,17 @@ main
       &:hover
         background $pink2
         color $white
+
+.container-double-partners
+  &:after
+    background $green
+    height 400px
+  .container-white
+    padding-top 0
+
+    .row
+      padding-top 102px
+      padding-bottom 102px
 
 .ornament
   position absolute
@@ -123,6 +136,35 @@ main
   .ornament.ornament4
     top: 1250px
     right: -150px;
+    +mobile()
+      top: 1650px
+
+#section1-11.section2-11
+  background $blue
+  .container-double-last:after
+    background $yellow2
+
+
+#section2-3
+  .ornament
+    bottom: -260px;
+    left: 200px;
+
+#section2-6
+  .ornament
+    top: -100px;
+    right: 80px;
+
+#section2-7
+  .ornament
+    bottom: 0px;
+    right: -100px;
+
 
 .back-blue
   background $blue
+
+.back-green
+  background $green
+  padding-top 120px
+  padding-bottom 70px

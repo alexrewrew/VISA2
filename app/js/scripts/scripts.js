@@ -3,6 +3,7 @@
 
     function createFullpage() {
         $('#fullpage').fullpage({
+            // anchors: ['screen1', 'screen2', 'screen3', 'screen4', 'screen5', 'screen6', 'screen7', 'screen8', 'screen9', 'screen10', 'screen11'],
             scrollOverflow: true,
             css3: true,
             scrollingSpeed: 1000,
@@ -88,6 +89,76 @@
                 createFullpage();
             }
         });
+        $('#fullpage2').fullpage({
+            // anchors: ['screen1', 'screen2', 'screen3', 'screen4', 'screen5', 'screen6', 'screen7', 'screen8', 'screen9', 'screen10', 'screen11'],
+            scrollOverflow: true,
+            css3: true,
+            scrollingSpeed: 1000,
+            navigation: true,
+            navigationPosition: 'right',
+            navigationTooltips: ['', 'Екскурсійним і туристичним компаніям', 'Музеям та галереям', 'Івент-компаніям', 'Готелям', 'Статистика', 'Система лояльності'],
+            onLeave: function (index, nextIndex) {
+
+
+                switch (index) {
+                    case 2:
+                        $('.screenshot2-2').removeClass('visible');
+                        break;
+                    case 3:
+                        $('.screenshot2-3').removeClass('visible');
+                        break;
+                    case 4:
+                        $('.screenshot2-4').removeClass('visible');
+                        break;
+                    case 5:
+                        $('.screenshot2-5').removeClass('visible');
+                        break;
+                    case 6:
+                        $('.screenshot2-6').removeClass('visible');
+                        break;
+                    case 7:
+                        $('.screenshot2-7').removeClass('visible');
+                        break;
+                }
+
+                switch (nextIndex) {
+                    case 1:
+                        $('.mask2').removeClass('visible');
+                        $('#fp-nav').removeClass('visible');
+                        break;
+                    case 2:
+                        $('.mask').addClass('visible');
+                        $('#fp-nav').addClass('visible');
+                        $('.screenshot2-2').addClass('visible');
+                        break;
+                    case 3:
+                        $('.screenshot2-3').addClass('visible');
+                        break;
+                    case 4:
+                        $('.screenshot2-4').addClass('visible');
+                        break;
+                    case 5:
+                        $('.screenshot2-5').addClass('visible');
+                        break;
+                    case 6:
+                        $('.screenshot2-6').addClass('visible');
+                        break;
+                    case 7:
+                        $('.mask2').addClass('visible');
+                        $('#fp-nav').addClass('visible');
+                        $('.screenshot2-7').addClass('visible');
+                        break;
+                    case 8:
+                        $('.mask2').removeClass('visible');
+                        $('#fp-nav').removeClass('visible');
+                        break;
+                }
+            },
+            afterResize: function () {
+                $.fn.fullpage.destroy('all');
+                createFullpage();
+            }
+        });
     }
 
 
@@ -142,6 +213,15 @@
         //     });
         // });
 
+        $(".smooth").click(function (event) {
+            event.preventDefault();
+            var id = $(this).attr("href"),
+                top = $(id).offset().top - 70;
+            $("body,html").animate({
+                scrollTop: top
+            }, 1500);
+        });
+
         $('#menu-trigger').click(function () {
            $('body').toggleClass('open');
            $('.nav-panel').slideToggle();
@@ -153,12 +233,15 @@
             $('.choice-description1').toggleClass('active');
             $('.choice2').toggleClass('transform');
             $('.button-choice2').toggleClass('opacity');
+
         });
         $('.button-choice2').hover(function () {
             $('.choice-description2').toggleClass('active');
             $('.choice1').toggleClass('transform');
             $('.button-choice1').toggleClass('opacity');
         });
+
+
     });
 })();
 

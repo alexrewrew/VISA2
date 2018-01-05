@@ -13,3 +13,62 @@
     max-width 540px
   +mobile()
     max-width calc(100% - 30px)
+    padding 4.5rem 0
+
+  img
+    +tablet()
+      width 100%
+    +portrait()
+      width 100%
+    +mobile()
+      width 100%
+
+  h3
+    font-size 2.375rem
+    margin-bottom 35px
+    +portrait()
+      font-size 2rem
+    +mobile()
+      font-size 2rem
+  h4
+    font-size $s28
+    margin-bottom 21px
+    +portrait()
+      font-size 1.5rem
+    +mobile()
+      font-size 1.5rem
+  p
+    margin-bottom 49px
+  ul
+    display flex
+    flex-direction row
+    justify-content space-between
+    +mobile()
+      margin-bottom 50px
+    li
+      +portrait()
+        flex 1 1 49%
+        max-width 49%
+      +mobile()
+        flex 1 1 49%
+        max-width 49%
+      a
+        &:hover
+          opacity .8
+
+.fancybox-close-small
+  top 28px
+  right 28px
+  &:hover
+    background $trans
+    outline none
+    &:after
+      background $trans
+      color $pink
+
+.fancybox-close-small:after
+  color $blue
+  font-size 80px
+  width 40px
+  height 40px
+  transitions()

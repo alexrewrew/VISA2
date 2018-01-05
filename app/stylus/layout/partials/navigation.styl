@@ -19,7 +19,7 @@ nav
   +mobile()
     background $white
     display none
-    height calc(100vh - 85px)
+    height calc(100vh - 75px)
 
 .menu-panel
   display flex
@@ -29,8 +29,6 @@ nav
     flex-wrap wrap
     justify-content center
     height auto
-
-
 
 .menu
   list-flex(row)
@@ -59,6 +57,9 @@ nav
     +mobile()
       flex 1 1 100%
       max-width 100%
+    +landscape()
+      flex 1 1 50%
+      max-width 50%
 
     a
       font-size: $s14
@@ -83,6 +84,30 @@ nav
         color $blue2
         &:after
           background $blue2
+
+.menu-partners
+  flex 1 1 31%
+  max-width 31%
+  +tablet()
+    flex 1 1 35%
+    max-width 35%
+  +portrait()
+    flex 1 1 50%
+    max-width 50%
+    li
+      flex 1 1 auto
+      max-width auto
+
+  +mobile()
+    flex 1 1 100%
+    max-width 100%
+  +landscape()
+    align-items center
+    justify-content space-between
+    li
+      flex 1 1 auto
+      max-width unset
+
 
 .menu-buttons
   list-flex(row)
@@ -123,19 +148,16 @@ nav
     .active
       background $yellow
 
-
 .nav-mobile
   display none
   +mobile()
     display block
 
-
-
 .nav-icon
   width 35px
   height 22px
   position relative
-  margin 31px 0
+  margin 26px 0
   cursor pointer
   transitions()
   transform rotate(0deg)

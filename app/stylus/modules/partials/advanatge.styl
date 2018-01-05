@@ -13,4 +13,28 @@
       left -65px
       top -9px
       +portrait()
-        left: -25px;
+        left: -25px
+
+.advantage-mobile
+  display none
+  position relative
+  width 320px
+  margin 0 auto
+  left: 20px;
+  margin-top 150px
+  &--phone
+    width 320px
+  &--screenshot
+    position absolute
+    width: 224px;
+    top: 66px;
+    left: 32px;
+  +mobile()
+    display block
+
+.advantage-mobile--desktop
+  left 0
+  .advantage-mobile--screenshot
+    width 300px
+    left 11px
+    top 11px

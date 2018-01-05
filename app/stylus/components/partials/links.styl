@@ -18,8 +18,8 @@ a
   img
     width 100%
   +mobile()
-    width: 85px;
-    height: 85px;
+    width: 75px;
+    height: 75px;
     left: -15px;
     top: 3px;
 
@@ -29,3 +29,43 @@ a
   line-height: 2.5;
   text-align: center;
 
+.link-partners
+  display block
+  margin-bottom 117px
+  svg
+    g, rect, polygon
+      fill $white
+      transitions()
+  span
+    display flex
+    color $white
+    align-items center
+    transitions()
+    svg
+      margin-left 35px
+
+
+  h4
+    font-size: $s24
+    line-height: 1.54
+    color $darkred
+    height 111px
+    display: flex;
+    align-items: center;
+    margin-bottom 28px
+
+  .advantage-image
+    svg
+      position relative
+      left -62px
+      top 15px
+
+
+  &:hover
+    svg
+      g, rect, polygon
+        fill $darkred
+      polygon
+        stroke $darkred
+    span
+      color $darkred

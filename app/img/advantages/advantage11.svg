@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="88px" height="95px" viewBox="0 0 88 95" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47 (45396) - http://www.bohemiancoding.com/sketch -->
+    <title>museum</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Partner_ALL" transform="translate(-754.000000, -968.000000)" fill-rule="nonzero">
+            <g id="Group-8" transform="translate(754.000000, 972.000000)">
+                <g id="museum">
+                    <polygon id="Shape" stroke="#FFFFFF" stroke-width="6" points="4.63157895 15.7575758 4.63157895 23.6363636 83.3684211 23.6363636 83.3684211 15.7575758 44.3936842 0"></polygon>
+                    <rect id="Rectangle-path" fill="#FFFFFF" x="9.26315789" y="34.2727273" width="6.94736842" height="28.3636364"></rect>
+                    <rect id="Rectangle-path" fill="#FFFFFF" x="30.1052632" y="34.2727273" width="6.94736842" height="28.3636364"></rect>
+                    <rect id="Rectangle-path" fill="#FFFFFF" x="50.9473684" y="34.2727273" width="6.94736842" height="28.3636364"></rect>
+                    <rect id="Rectangle-path" fill="#FFFFFF" x="71.7894737" y="34.2727273" width="6.94736842" height="28.3636364"></rect>
+                    <rect id="Rectangle-path" fill="#FFFFFF" x="4.63157895" y="69.7272727" width="79.8947368" height="7.09090909"></rect>
+                    <rect id="Rectangle-path" fill="#FFFFFF" x="0" y="83.9090909" width="88" height="7.09090909"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
