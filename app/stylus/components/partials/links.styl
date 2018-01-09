@@ -44,7 +44,6 @@ a
     svg
       margin-left 35px
 
-
   h4
     font-size: $s24
     line-height: 1.54
@@ -60,7 +59,6 @@ a
       left -62px
       top 15px
 
-
   &:hover
     svg
       g, rect, polygon
@@ -69,3 +67,28 @@ a
         stroke $darkred
     span
       color $darkred
+
+  +mobile()
+    margin-bottom 60px
+    h4
+      font-size 1rem
+      line-height 1.5
+      margin-bottom 10px
+      height 75px
+    .advantage
+      padding-left 0
+      flex-wrap wrap
+      .advantage-image
+        //margin-right 20px
+        max-width 100%
+        flex 1 1 100%
+        height 72px
+        svg
+          left 0
+          top 0
+          //width 100%
+          max-width 50px
+          height auto
+      .advantage-image
+        flex 1 1 100%
+        max-width 100%

@@ -1,12 +1,13 @@
 (function () {
     "use strict";
 
+
+
     function createFullpage() {
         $('#fullpage').fullpage({
-            // anchors: ['screen1', 'screen2', 'screen3', 'screen4', 'screen5', 'screen6', 'screen7', 'screen8', 'screen9', 'screen10', 'screen11'],
+            anchors: ['section1', 'section2', 'section3', 'section4', 'section5', 'section6', 'section7', 'section8', 'section9', 'section10', 'section11', 'section12'],
             scrollOverflow: true,
             css3: true,
-            // menu: '.menu',
             scrollingSpeed: 1000,
             navigation: true,
             navigationPosition: 'right',
@@ -54,24 +55,31 @@
                         $('.screenshot1-2').addClass('visible');
                         break;
                     case 3:
+                        $('.mask').addClass('visible');
                         $('.screenshot1-3').addClass('visible');
                         break;
                     case 4:
+                        $('.mask').addClass('visible');
                         $('.screenshot1-4').addClass('visible');
                         break;
                     case 5:
+                        $('.mask').addClass('visible');
                         $('.screenshot1-5').addClass('visible');
                         break;
                     case 6:
+                        $('.mask').addClass('visible');
                         $('.screenshot1-6').addClass('visible');
                         break;
                     case 7:
+                        $('.mask').addClass('visible');
                         $('.screenshot1-7').addClass('visible');
                         break;
                     case 8:
+                        $('.mask').addClass('visible');
                         $('.screenshot1-8').addClass('visible');
                         break;
                     case 9:
+                        $('.mask').addClass('visible');
                         $('.screenshot1-9').addClass('visible');
                         break;
                     case 10:
@@ -91,7 +99,7 @@
             }
         });
         $('#fullpage2').fullpage({
-            // anchors: ['screen1', 'screen2', 'screen3', 'screen4', 'screen5', 'screen6', 'screen7', 'screen8', 'screen9', 'screen10', 'screen11'],
+            anchors: ['section1', 'section2', 'section3', 'section4', 'section5', 'section6', 'section7', 'section8'],
             scrollOverflow: true,
             css3: true,
             scrollingSpeed: 1000,
@@ -128,20 +136,24 @@
                         $('#fp-nav').removeClass('visible');
                         break;
                     case 2:
-                        $('.mask').addClass('visible');
+                        $('.mask2').addClass('visible');
                         $('#fp-nav').addClass('visible');
                         $('.screenshot2-2').addClass('visible');
                         break;
                     case 3:
+                        $('.mask2').addClass('visible');
                         $('.screenshot2-3').addClass('visible');
                         break;
                     case 4:
+                        $('.mask2').addClass('visible');
                         $('.screenshot2-4').addClass('visible');
                         break;
                     case 5:
+                        $('.mask2').addClass('visible');
                         $('.screenshot2-5').addClass('visible');
                         break;
                     case 6:
+                        $('.mask2').addClass('visible');
                         $('.screenshot2-6').addClass('visible');
                         break;
                     case 7:
@@ -175,7 +187,7 @@
             destroy = true;
         } else if (window.matchMedia("(min-width: 768px)").matches) {
 
-            $('.mask, #fp-nav').removeClass('visible');
+            $('.mask, .mask2, #fp-nav').removeClass('visible');
 
             if (destroy) {
                 createFullpage();
@@ -199,20 +211,22 @@
 
     $(document).ready(function () {
 
-        // $(".smooth").click(function (event) {
-        //     event.preventDefault();
-        //     var id = $(this).attr("href"),
-        //         top = $(id).offset().top - 70;
-        //     $("body,html").animate({
-        //         scrollTop: top
-        //     }, 1500);
-        // });
+        $(".smooth").click(function (event) {
+            event.preventDefault();
+            var id = $(this).attr("href"),
+                top = $(id).offset().top - 70;
+            $("body,html").animate({
+                scrollTop: top
+            }, 1500);
+        });
 
         $('#menu-trigger').click(function () {
            $('body').toggleClass('open');
            $('.nav-panel').slideToggle();
 
         });
+
+
 
 
         $('.button-choice1').hover(function () {

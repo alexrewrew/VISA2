@@ -74,6 +74,13 @@ main
   +mobile()
     padding-top 80px
 
+#section1-1.section2-1
+  +mobile()
+    img
+      display inline-block
+      width 100%
+      margin-bottom 50px
+
 #section1-2
   .ornament
     bottom: -350px;
@@ -99,30 +106,51 @@ main
     top: -170px;
     left: -50px;
 
+#section1-10
+  .ornament
+    bottom: -170px;
+    left: 40%
+
 #section1-11
+  background $yellow2
+  position relative
+  &:after
+    pseudo(block, absolute)
+    bottom 0
+    left 0
+    right 0
+    height 50%
+    background $green
+
+  .container-white
+    padding-top 0
+    padding-bottom 0
+    .row
+      padding-top 80px
+      padding-bottom 96px
+      h3
+        color $blue
+
+
+#section1-12
   background $green
   h3
     text-align center
     color $white
-  .container-double
-    padding-top 109px
-    margin-bottom 179px
-    &:after
-      background $yellow2
-      top 0
-      bottom auto
-      height 319px
-    .container-white
-      padding-top 0
-      .row
-        padding-top 80px
-        padding-bottom 96px
-        h3
-          color $blue
+    margin-top 107px
+  .ornament.ornament3
+    top: 350px
+    left: -180px;
+  .ornament.ornament4
+    top: 750px
+    right: -150px;
+    +mobile()
+      top: 1650px
   .container-double-last
     background $blue
-    margin-bottom 83px
     &:after
+      height 420px
+      top 0
       background $green
     .container-white
       .row
@@ -130,27 +158,18 @@ main
         .button
           margin 0 auto 44px
           max-width 360px
-  .ornament.ornament3
-    top: 850px
-    left: -180px;
-  .ornament.ornament4
-    top: 1250px
-    right: -150px;
-    +mobile()
-      top: 1650px
 
-#section1-11.section2-11
+#section1-12.section2-11
   background $blue
   .container-double-last:after
     background $yellow2
-
 
 #section2-3
   .ornament
     bottom: -260px;
     left: 200px;
 
-#section2-6
+#section2-5
   .ornament
     top: -100px;
     right: 80px;
@@ -159,7 +178,6 @@ main
   .ornament
     bottom: 0px;
     right: -100px;
-
 
 .back-blue
   background $blue
