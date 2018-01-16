@@ -1,32 +1,38 @@
 nav
     .container
         .row
-            .col-6.col-md-2.col-lg-1
+            .col-2.col-md-2.col-lg-1
                 a(href='index.html' title='').link-logo
                     img(src='img/logo/logo.svg' title='' alt='')
 
-            .col-6.nav-mobile
+
+
+            .col-8.col-md-5.col-lg-5
+                ul.menu-buttons
+                    li
+                        a(href='index.html').button.active
+                            span Туристам
+                    li
+                        a(href='partners.html').button
+                            span Партнерам
+
+            .col-2.nav-mobile
                 .nav-icon#menu-trigger
                     span
                     span
                     span
                     span
 
-            .col-md-10.col-lg-11.nav-panel
-                .menu-panel
-                    ul.menu-buttons
-                        li
-                            a(href='index.html').button.active Туристам
-                        li
-                            a(href='partners.html').button Партнерам
+            .col-md-5.col-lg-6.nav-panel
+
 
                     ul.menu
 
                         li
                             a(href='index.html' title='') Головна
                         li
-                            a(href='#section2' title='') Переваги для туристів
+                            a(href='#section3' title='') Переваги для туристів
                         li
-                            a(href='#section11' title='') Як це працює
+                            a(href='#section12' title='') Як це працює
                         li
-                            a(href='#section12' title='') Нарахування балів
+                            a(href='#section13' title='') Нарахування балів

@@ -99,6 +99,14 @@ gulp.task("scripts3", function () {
         .pipe(concat("scripts.js"))
         .pipe(gulp.dest("app/js"));
 });
+//js concat custom
+gulp.task("scripts4", function () {
+    return gulp.src([
+        "app/js/scripts/fullpage1.js",
+        "app/js/scripts/fullpage2.js"
+    ])
+        .pipe(gulp.dest("app/js"));
+});
 
 //--------BUILD
 
@@ -109,7 +117,7 @@ gulp.task("clean", function (cb) {
 
 //js minify
 gulp.task("compress", function () {
-    return gulp.src(["app/js/scripts.js", 'app/js/jquery.js', 'app/js/vendor.js'])
+    return gulp.src(["app/js/scripts.js", 'app/js/jquery.js', 'app/js/vendor.js', 'app/js/fullpage1.js', 'app/js/fullpage2.js'])
         .pipe(uglify())
         .pipe(gulp.dest("dist/js"));
 });
@@ -169,7 +177,7 @@ gulp.task("build", function (callback) {
 });
 
 //watch
-gulp.task("watch", ["scripts1", "scripts2", "scripts3", "pug", "browserSync", "stylus"], function () { //запуск browser-sync та sass відслідковувачів
+gulp.task("watch", ["scripts1", "scripts2", "scripts3", "scripts4", "pug", "browserSync", "stylus"], function () { //запуск browser-sync та sass відслідковувачів
     gulp.watch("app/stylus/**/*.styl", ["stylus"]); //пошук scss файлів
     gulp.watch("app/libs/rew-sidenav/*.styl", ["stylus"]); //пошук scss файлів
     gulp.watch("app/pages/**/*.pug", ["pug"]); //пошук html файлів

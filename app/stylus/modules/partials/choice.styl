@@ -1,23 +1,25 @@
 .choice
-  height 510px
   position relative
   z-index 10
   transitions()
-
-  +portrait()
-    img
+  height 375px
+  img
+    max-width 475px
+    +portrait()
       max-width 500px
+
+
   +mobile()
     position static
     height 150px
-    margin-top 80px
+    margin-top 40px
     img
       width 100%
 
 
 
 .choice1
-  left -125px
+    left -75px
 
 .choice2
   left 20px
@@ -26,22 +28,29 @@
 .choice.transform
   opacity .6
 
+
 .choice1.transform
   transform translateX(-220px)
+  +mobile()
+    transform none
 
 .choice2.transform
   transform translateX(220px)
+  +mobile()
+    transform none
 
 .choice-description
   position absolute
   max-width 292px
   z-index 30
-  top 150px
+  top 30px
 
   opacity 0
 
   transitions()
   +portrait()
+    display none
+  +mobile()
     display none
   p
     color $white
@@ -55,6 +64,7 @@
   right -292px
   img
     left -225px
+
 .choice-description2
   left -194px
   img

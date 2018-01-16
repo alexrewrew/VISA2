@@ -5,13 +5,16 @@ footer
   background $white
   padding-top 72px
   padding-bottom 70px
+  +mobile()
+    padding-bottom 0
   p
     font-size: $s12
     font-weight: 500;
     line-height: 2.33;
     color: $darkred
   .button
-    background $yellow
+    span
+      background $yellow
   &:after
     pseudo(block, absolute)
     bottom 0
@@ -19,6 +22,8 @@ footer
     right 0
     height 70px
     background $blue
+    +mobile()
+      height 30px
 
 .footer-flex
   display flex
@@ -37,7 +42,7 @@ footer
 .footer-flex-partners
   align-items flex-start
   +mobile()
-    margin-top 80px
+    margin-top 40px
     flex-wrap wrap
   h6
     margin-right: 40px;
@@ -58,6 +63,10 @@ footer
     +mobile()
       margin-right 15px
       text-align center
+  &--partners
+    +mobile()
+      flex 1 1 100%
+      max-width 100%
 
 .footer-partners
   display flex

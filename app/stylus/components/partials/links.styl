@@ -28,10 +28,12 @@ a
   font-size: 1rem
   line-height: 2.5;
   text-align: center;
+  +mobile()
+    line-height 1.5
 
 .link-partners
   display block
-  margin-bottom 117px
+  margin-bottom 60px
   svg
     g, rect, polygon
       fill $white
@@ -46,12 +48,14 @@ a
 
   h4
     font-size: $s24
-    line-height: 1.54
+    line-height: 1.25
     color $darkred
-    height 111px
+    height 90px
     display: flex;
     align-items: center;
-    margin-bottom 28px
+    margin-bottom 20px
+    +portrait()
+      font-size 1.25rem
 
   .advantage-image
     svg

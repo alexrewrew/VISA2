@@ -1,12 +1,16 @@
 @import '../../utilities/vars'
 @import '../../utilities/mixins'
 
-//@import "../libs/rew-sidenav/sidenav.styl"
-//@import "../libs/rew-downnav/downnav.styl"
 
 nav
   transitions()
-  margin-bottom 33px
+  margin-bottom 20px
+  position absolute
+  top 0
+  left 0
+  right 0
+  z-index 40000
+  background $blue
   +mobile()
     position fixed
     top 0
@@ -21,25 +25,21 @@ nav
     display none
     height calc(100vh - 75px)
 
-.menu-panel
-  display flex
-  justify-content space-between
-  height 100%
-  +mobile()
-    flex-wrap wrap
-    justify-content center
-    height auto
+//.menu-panel
+//  display flex
+//  justify-content space-between
+//  height 100%
+//  +mobile()
+//    flex-wrap wrap
+//    justify-content center
+//    height auto
 
 .menu
   list-flex(row)
   justify-content space-between
   align-items center
   height 100%
-  flex 1 1 51%
-  max-width 51%
   +portrait()
-    flex 1 1 50%
-    max-width 50%
     flex-wrap wrap
     padding: 30px 0;
   +mobile()
@@ -85,29 +85,6 @@ nav
         &:after
           background $blue2
 
-.menu-partners
-  flex 1 1 31%
-  max-width 31%
-  +tablet()
-    flex 1 1 35%
-    max-width 35%
-  +portrait()
-    flex 1 1 50%
-    max-width 50%
-    li
-      flex 1 1 auto
-      max-width auto
-
-  +mobile()
-    flex 1 1 100%
-    max-width 100%
-  +landscape()
-    align-items center
-    justify-content space-between
-    li
-      flex 1 1 auto
-      max-width unset
-
 
 .menu-buttons
   list-flex(row)
@@ -115,20 +92,11 @@ nav
   align-items center
   justify-content space-between
   height 100%
-  flex 1 1 44%
-  max-width 44%
   +portrait()
     padding 0
-    flex 1 1 45%
-    max-width 45%
   +mobile()
-    flex 1 1 100%
-    max-width 100%
     height auto
-    flex-wrap wrap
-    padding 20px 0
-    justify-content flex-start
-    align-items flex-start
+    padding  18px 0
 
   li
     width 100%
@@ -141,12 +109,16 @@ nav
         max-width 110px
       +mobile()
         max-width 100%
-        margin-bottom 1rem
+        margin-bottom 0
+        font-size .875rem
+
       &:hover
-        background: #f2d300;
-        color: #a39300;
+        span
+          background: #f2d300;
+          color: #a39300;
     .active
-      background $yellow
+      span
+        background $yellow
 
 .nav-mobile
   display none

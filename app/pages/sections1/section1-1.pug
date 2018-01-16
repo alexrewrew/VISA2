@@ -1,42 +1,31 @@
 #section1-1.section
-    .overflow-first
 
-        include ../partials/_navigation.pug
+    include ../partials/_navigation.pug
 
-        .container
-            .row
-                .col-12
-                    h1 Турист України
-                    h2 - Подорожі збагачують!
-                    h5 Tourist of Ukraine – It's all about U!
-                .col-6
-                    .choice.choice1
-                        img(src='img/illus/illus1.png')
+    .container.section-first
 
-                    .choice-description.choice-description1
-                        p Подорожуйте, насолоджуйтесь, накопичуйте бали та користуйтеся привілеями з мобільним додатком «Турист України»!
-                        img(src='img/path/path-c1.svg')
+        .row
 
+            .col-12
+                h1 Турист України
+                h2 - Подорожі збагачують!
+                h5 Tourist of Ukraine – It's all about U!
 
-                    a(href='#tourist').button.button-choice.button-choice1.smooth Туристам
+            .col-6
+                .choice.choice1
+                    img(src='img/illus/illus1.png')
+                .choice-description.choice-description1
+                    p Подорожуйте, насолоджуйтесь, накопичуйте бали та користуйтеся привілеями з мобільним додатком «Турист України»!
+                    img(src='img/path/path-c1.svg')
 
-                .col-6
-                    .choice.choice2
-                        img(src='img/illus/illus2.png')
+                a(href='#section2').button.button-choice.button-choice1
+                    span Туристам
 
-                    .choice-description.choice-description2
-                        p Програма лояльності «Турист України» шукає партнерів! Понад 17 млн. клієнтів чекають на ваші пропозиції. Долучайтесь!
-                        img(src='img/path/path-c2.svg')
-
-                    a(href='partners.html').button.button-choice.button-choice2 Партнерам
-        .container-double
-            .container.container-white
-                .row
-                    .col-md-5.offset-lg-2.offset-md-1.offset-sm-1.col-sm-10
-                        h3 Туристам
-                        p Національна туристична програма лояльності – гра, з якою подорожувати Україною ще цікавіше. Немає різниці, ви живете мандрівками чи досліджуєте виключно вулиці рідного міста, - з мобільним додатком «Турист України» життя перетвориться на неймовірну подорож.
-                            br
-                            | Долучайтеся!
-                        a(data-fancybox data-src="#modal" href="javascript:;").button.button-choice Стати Туристом
-                    .col-lg-5.col-md-6
-                        img(src='img/illus/illus3.svg')
+            .col-6
+                .choice.choice2
+                    img(src='img/illus/illus2.png')
+                .choice-description.choice-description2
+                    p Програма лояльності «Турист України» шукає партнерів! Понад 17 млн. клієнтів чекають на ваші пропозиції. Долучайтесь!
+                    img(src='img/path/path-c2.svg')
+                a(href='partners.html').button.button-choice.button-choice2
+                    span Партнерам

@@ -12,36 +12,38 @@ button
   display block
   max-width 290px
   width 100%
-  text-align center
-
-  background $white
-  color $darkred
-
-  padding-top 10px
-  padding-bottom 11px
-
-  box-shadow: 0 10px 15px 0 rgba(0,111,184,.3)
-
-  font-family $slave-font, sans-serif
-
+  background $trans
+  span
+    display block
+    text-align center
+    padding-top 10px
+    padding-bottom 11px
+    background $white
+    color $darkred
+    box-shadow: 0 10px 15px 0 rgba(0,111,184,.3)
+    font-family $slave-font, sans-serif
+    transitions()
   &:hover
-    color $black
-    background $yellow
-    transform: translateY(10px)
-    box-shadow: 0 10px 15px 0 rgba(0,111,184,0)
+    span
+      transform: translateY(10px)
+      box-shadow: 0 10px 15px 0 rgba(0,111,184,0)
+      color $black
+      background $yellow
 
 .button-choice
   position relative
   z-index: 20
   margin 0 auto
   max-width: 361px
-  font-size $s18
-  font-weight 700
-  background $pink
-  color $white
-  padding-top 15px
-  padding-bottom 18px
+  span
+    font-size $s18
+    font-weight 700
+    background $pink
+    color $white
+    padding-top 15px
+    padding-bottom 18px
 
 
 .button-choice.opacity
-  background $pink2
+  span
+    background $pink2

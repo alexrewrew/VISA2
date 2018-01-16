@@ -28,11 +28,9 @@ main
 
 .container-white
   position relative
-  padding-top 219px
   z-index 10
-  padding-bottom 109px
   +mobile()
-    padding-top 100px
+    padding-top 50px
     img
       display none
   .row
@@ -42,6 +40,9 @@ main
     box-shadow: 0 7px 14px 0 rgba(0, 0, 0, 0.17);
     position relative
     z-index 10
+    +mobile()
+      padding-bottom 50px
+      padding-top 40px
     p
       font-weight: 300;
       line-height: 1.75;
@@ -51,8 +52,9 @@ main
       margin 0
       max-width: 263px
       &:hover
-        background $pink2
-        color $white
+        span
+          background $pink2
+          color $white
 
 .container-double-partners
   &:after
@@ -69,120 +71,11 @@ main
   position absolute
   z-index 1
 
-#section1-1
-  background $blue
-  +mobile()
-    padding-top 80px
-
-#section1-1.section2-1
-  +mobile()
-    img
-      display inline-block
-      width 100%
-      margin-bottom 50px
-
-#section1-2
-  .ornament
-    bottom: -350px;
-    right: -70px;
-
-#section1-4
-  .ornament
-    top: -100px;
-    left: 5px;
-
-#section1-5
-  .ornament
-    bottom: -280px;
-    right: 10px;
-
-#section1-7
-  .ornament
-    bottom: -130px;
-    right: 200px;
-
-#section1-9
-  .ornament
-    top: -170px;
-    left: -50px;
-
-#section1-10
-  .ornament
-    bottom: -170px;
-    left: 40%
-
-#section1-11
-  background $yellow2
-  position relative
-  &:after
-    pseudo(block, absolute)
-    bottom 0
-    left 0
-    right 0
-    height 50%
-    background $green
-
-  .container-white
-    padding-top 0
-    padding-bottom 0
-    .row
-      padding-top 80px
-      padding-bottom 96px
-      h3
-        color $blue
-
-
-#section1-12
-  background $green
-  h3
-    text-align center
-    color $white
-    margin-top 107px
-  .ornament.ornament3
-    top: 350px
-    left: -180px;
-  .ornament.ornament4
-    top: 750px
-    right: -150px;
-    +mobile()
-      top: 1650px
-  .container-double-last
-    background $blue
-    &:after
-      height 420px
-      top 0
-      background $green
-    .container-white
-      .row
-        padding 140px 0
-        .button
-          margin 0 auto 44px
-          max-width 360px
-
-#section1-12.section2-11
-  background $blue
-  .container-double-last:after
-    background $yellow2
-
-#section2-3
-  .ornament
-    bottom: -260px;
-    left: 200px;
-
-#section2-5
-  .ornament
-    top: -100px;
-    right: 80px;
-
-#section2-7
-  .ornament
-    bottom: 0px;
-    right: -100px;
 
 .back-blue
   background $blue
 
 .back-green
   background $green
-  padding-top 120px
-  padding-bottom 70px
+  //padding-top 120px
+  //padding-bottom 70px
