@@ -705,17 +705,27 @@ main {
 .back-green {
 	background: #b8d50a;
 }
+.fp-viewing-for-tourists nav, .fp-viewing-for-partners nav {
+	background: #4babe0;
+	max-height: unset;
+}
+.fp-viewing-for-tourists nav .link-logo, .fp-viewing-for-partners nav .link-logo {
+	max-width: 125px;
+}
 nav {
 	-webkit-transition: all .4s ease;
 	     -o-transition: all .4s ease;
 	        transition: all .4s ease;
-	margin-bottom: 20px;
 	position: absolute;
 	top: 0;
 	left: 0;
 	right: 0;
-	z-index: 40000;
-	background: #4babe0;
+	z-index: 4000;
+	background: transparent;
+	max-height: 60px;
+}
+nav .link-logo {
+	max-width: 60px;
 }
 @media (max-width: 767px) {
 	nav {
@@ -725,6 +735,10 @@ nav {
 		right: 0;
 		background: #4babe0;
 		z-index: 4000;
+		max-height: unset;
+	}
+	nav .link-logo {
+		max-width: unset;
 	}
 }
 @media (max-width: 767px) {
@@ -975,7 +989,7 @@ footer:after {
 	bottom: 0;
 	left: 0;
 	right: 0;
-	height: 70px;
+	height: 130px;
 	background: #4babe0;
 }
 @media (max-width: 767px) {
@@ -1283,9 +1297,15 @@ footer:after {
 	     -o-transition: all .4s ease;
 	        transition: all .4s ease;
 }
+.section .fp-tableCell {
+	padding-top: 60px;
+}
 #section1-1 {
 	background: #4babe0;
 	position: relative;
+}
+#section1-1 .fp-tableCell {
+	padding-top: 0;
 }
 #section1-1 .fp-scroller {
 	overflow: visible;
@@ -1562,6 +1582,12 @@ footer:after {
 	margin: 0 auto 44px;
 	max-width: 360px;
 }
+#section2-10 .fp-tableCell {
+	padding-top: 0;
+}
+#section2-10 footer:after {
+	height: 70px;
+}
 @media (min-width: 375px) and (max-width: 767px) {
 	#section2-1 .container, #section2-2 .container, #section2-3 .container, #section2-4 .container, #section2-5 .container, #section2-6 .container, #section2-7 .container, #section2-8 .container, #section2-9 .container, #section2-10 .container {
 		padding-left: 30px;
@@ -1751,7 +1777,7 @@ footer:after {
 }
 .advantage-image img {
 	position: relative;
-	left: -65px;
+	left: -50px;
 	top: -9px;
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -1811,12 +1837,12 @@ footer:after {
 }
 @media (min-width: 992px) and (max-width: 1199px) {
 	#fp-nav.right {
-		right: 30px;
+		right: 20px;
 	}
 }
 @media (min-width: 768px) and (max-width: 991px) {
 	#fp-nav.right {
-		right: 30px;
+		right: 20px;
 	}
 }
 #fp-nav.right.visible {
@@ -1914,7 +1940,7 @@ footer:after {
 	position: fixed;
 	top: 0;
 	left: calc(50% - ((1010px / 2)));
-	z-index: 20000;
+	z-index: 2000;
 	height: 100%;
 	display: -webkit-box;
 	display: -webkit-flex;
@@ -1947,7 +1973,7 @@ footer:after {
 }
 .mask-phone {
 	position: absolute;
-	top: calc(50% - (622px / 2));
+	top: calc(50% - (542px / 2));
 	left: 0;
 }
 .mask h3 {
@@ -1961,13 +1987,13 @@ footer:after {
 	width: 100%;
 	left: calc(50% + 402px);
 	text-align: center;
-	bottom: calc(50% + (480px / 2));
+	bottom: calc(50% + (400px / 2));
 }
 .mask .button {
 	position: absolute;
 	width: 262px;
 	left: calc(553px - 131px);
-	top: calc(50% + (425px / 2));
+	top: calc(50% + (505px / 2));
 }
 .mask .button:hover span {
 	background: #cf4d7a;
@@ -1975,7 +2001,7 @@ footer:after {
 }
 .mask .screenshot {
 	position: absolute;
-	top: calc(50% - (475px / 2));
+	top: calc(50% - (395px / 2));
 	left: 36px;
 	opacity: 0;
 	z-index: 1;
@@ -2043,6 +2069,7 @@ footer:after {
 @media (min-width: 768px) and (max-width: 991px) {
 	.mask2 .button {
 		right: 590px;
+		top: calc(50% + (625px / 2));
 	}
 }
 .counter {

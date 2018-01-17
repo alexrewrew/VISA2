@@ -2,7 +2,7 @@
   position fixed
   top 0
   left calc(50% - ((1010px / 2)))
-  z-index 20000
+  z-index 2000
   height 100%
   display flex
   justify-content center
@@ -18,7 +18,7 @@
 
   &-phone
     position absolute
-    top calc(50% - (622px / 2))
+    top calc(50% - (542px / 2))
     left 0
 
 
@@ -35,14 +35,14 @@
     text-align center
     //top 8%
 
-    bottom calc(50% + (480px / 2))
+    bottom calc(50% + (400px / 2))
 
   .button
     position absolute
     width 262px
     left: calc(553px - 131px);
 
-    top calc(50% + (425px / 2))
+    top calc(50% + (505px / 2))
     &:hover
       span
         background $pink2
@@ -50,7 +50,7 @@
 
   .screenshot
     position absolute
-    top calc(50% - (475px / 2))
+    top calc(50% - (395px / 2))
     left 36px
     opacity 0
     z-index 1
@@ -95,6 +95,7 @@
       right: 710px;
     +portrait()
       right: 590px;
+      top: calc(50% + (625px / 2));
 
 
 

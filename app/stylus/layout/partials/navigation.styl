@@ -1,16 +1,26 @@
 @import '../../utilities/vars'
 @import '../../utilities/mixins'
 
+.fp-viewing-for-tourists, .fp-viewing-for-partners
+  nav
+    background $blue
+    max-height unset
+    .link-logo
+      max-width 125px
 
 nav
   transitions()
-  margin-bottom 20px
   position absolute
   top 0
   left 0
   right 0
-  z-index 40000
-  background $blue
+  z-index 4000
+  background $trans
+
+  max-height 60px
+  .link-logo
+    max-width 60px
+
   +mobile()
     position fixed
     top 0
@@ -18,21 +28,15 @@ nav
     right 0
     background $blue
     z-index 4000
+    max-height unset
+    .link-logo
+      max-width unset
 
 .nav-panel
   +mobile()
     background $white
     display none
     height calc(100vh - 75px)
-
-//.menu-panel
-//  display flex
-//  justify-content space-between
-//  height 100%
-//  +mobile()
-//    flex-wrap wrap
-//    justify-content center
-//    height auto
 
 .menu
   list-flex(row)
