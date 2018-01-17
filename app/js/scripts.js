@@ -19,7 +19,11 @@
 
         });
 
-
+        $(function () {
+            $('.overflow-first').slimScroll({
+                height: 'auto'
+            });
+        });
 
 
         $('.button-choice1').hover(function () {
