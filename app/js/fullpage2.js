@@ -3,7 +3,7 @@
 
     function createFullpage2() {
         $('#fullpage2').fullpage({
-            anchors: ['section1', 'section2', 'section3', 'section4', 'section5', 'section6', 'section7', 'section8', 'section9'],
+            anchors: ['for-partners', 'for-partners-whom', 'for-partners-excursions', 'for-tourists-museums-and-galleries', 'for-tourists-event-companies', 'for-partners-hotels', 'for-partners-statistics', 'for-partners-loyalty-system', 'for-partners-become', 'for-partners-footer'],
             scrollOverflow: true,
             css3: true,
             scrollingSpeed: 1000,

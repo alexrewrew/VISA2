@@ -802,15 +802,6 @@ nav {
 		max-width: 100%;
 	}
 }
-@media (max-device-width: 767px) and (orientation: landscape) {
-	.menu li {
-		-webkit-box-flex: 1;
-		-webkit-flex: 1 1 50%;
-		    -ms-flex: 1 1 50%;
-		        flex: 1 1 50%;
-		max-width: 50%;
-	}
-}
 .menu li a {
 	font-size: .875rem;
 	font-weight: 500;
@@ -1422,6 +1413,7 @@ footer:after {
 	#section1-13 .container-double-last {
 		padding-top: 0;
 		margin-bottom: 0;
+		padding-bottom: 50px;
 	}
 }
 #section1-13 .container-double-last:after {
@@ -1441,6 +1433,26 @@ footer:after {
 #section1-13 .container-double-last .container-white .row .button {
 	margin: 0 auto 44px;
 	max-width: 360px;
+}
+@media (min-width: 375px) and (max-width: 767px) {
+	#section1-1 .container, #section1-2 .container, #section1-3 .container, #section1-4 .container, #section1-5 .container, #section1-6 .container, #section1-7 .container, #section1-8 .container, #section1-9 .container, #section1-10 .container, #section1-11 .container, #section1-12 .container, #section1-13 .container {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+	#section1-1 nav .container {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	#section1-2 .container-white .row, #section1-12 .container-white .row, #section1-13 .container-white .row {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	#section1-13 .container-double-last .container-white .row {
+		padding: 50px 15px;
+	}
+	.advantage-mobile {
+		left: 20px;
+	}
 }
 #section2-1 {
 	background: #4babe0;
@@ -1497,6 +1509,23 @@ footer:after {
 }
 #section2-9 {
 	background: #4babe0;
+	position: relative;
+}
+#section2-9:after {
+	content: '';
+	display: block;
+	position: absolute;
+	height: 50%;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: auto;
+	background: #f6de00;
+}
+@media (max-width: 767px) {
+	#section2-9 .back-blue {
+		padding-bottom: 50px;
+	}
 }
 #section2-9 h3 {
 	text-align: center;
@@ -1516,40 +1545,36 @@ footer:after {
 		top: 1650px;
 	}
 }
-#section2-9 .container-double-last {
-	background: #4babe0;
-	padding-top: 75px;
-	padding-bottom: 75px;
-	margin-bottom: 117px;
-}
 @media (max-width: 767px) {
-	#section2-9 .container-double-last {
-		padding-top: 0;
-		margin-bottom: 0;
-	}
-}
-#section2-9 .container-double-last:after {
-	height: 50%;
-	top: 0;
-	bottom: auto;
-	background: #f6de00;
-}
-@media (max-width: 767px) {
-	#section2-9 .container-double-last .container-white {
+	#section2-9 .container-white {
 		padding-top: 0;
 	}
 }
-#section2-9 .container-double-last .container-white .row {
+#section2-9 .container-white .row {
 	padding: 140px 0;
 }
 @media (max-width: 767px) {
-	#section2-9 .container-double-last .container-white .row {
+	#section2-9 .container-white .row {
 		padding: 50px 0;
 	}
 }
-#section2-9 .container-double-last .container-white .row .button {
+#section2-9 .container-white .row .button {
 	margin: 0 auto 44px;
 	max-width: 360px;
+}
+@media (min-width: 375px) and (max-width: 767px) {
+	#section2-1 .container, #section2-2 .container, #section2-3 .container, #section2-4 .container, #section2-5 .container, #section2-6 .container, #section2-7 .container, #section2-8 .container, #section2-9 .container, #section2-10 .container {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+	#section2-1 nav .container {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	#section2-1 .container-white .row, #section2-9 .container-white .row {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
 }
 .volta {
 	float: right;
@@ -1765,10 +1790,10 @@ footer:after {
 }
 .advantage-heading-mobile {
 	display: none;
-	padding-top: 40px;
+	padding-top: 50px;
 }
 .advantage-heading-mobile h3 {
-	margin-bottom: 10px;
+	margin-bottom: 0;
 	color: #fff;
 	text-align: center;
 }
@@ -1808,7 +1833,7 @@ footer:after {
 	margin-bottom: 12px;
 	margin-top: 12px;
 }
-#fp-nav ul li:first-child, #fp-nav ul li:last-child, #fp-nav ul li:nth-child(2), #fp-nav ul li:nth-child(12) {
+#fp-nav ul li:first-child, #fp-nav ul li:last-child, #fp-nav ul li:nth-child(2), #fp-nav ul li:nth-child(12), #fp-nav ul li:nth-last-child(2) {
 	display: none;
 }
 #fp-nav ul li .fp-tooltip {
@@ -1882,6 +1907,9 @@ footer:after {
 .section.fp-section.fp-table.active .row {
 	opacity: 1;
 }
+#section2-9.section.fp-section.fp-table .row {
+	opacity: 1;
+}
 .mask {
 	position: fixed;
 	top: 0;
@@ -1933,7 +1961,7 @@ footer:after {
 	width: 100%;
 	left: calc(50% + 402px);
 	text-align: center;
-	top: 8%;
+	bottom: calc(50% + (480px / 2));
 }
 .mask .button {
 	position: absolute;
@@ -2004,7 +2032,7 @@ footer:after {
 }
 .mask2 .button {
 	right: 814px;
-	top: calc(50% + (550px / 2));
+	top: calc(50% + (530px / 2));
 	left: auto;
 }
 @media (min-width: 992px) and (max-width: 1199px) {

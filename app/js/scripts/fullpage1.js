@@ -3,7 +3,7 @@
 
     function createFullpage1() {
         $('#fullpage').fullpage({
-            anchors: ['section1', 'section2', 'section3', 'section4', 'section5', 'section6', 'section7', 'section8', 'section9', 'section10', 'section11', 'section12', 'section13'],
+            anchors: ['for-tourists', 'for-tourists-about', 'for-tourists-places', 'for-tourists-tours', 'for-tourists-excursions', 'for-tourists-tickets-for-events', 'for-tourists-tickets-for-transport', 'for-tourists-booking', 'for-tourists-entertainment', 'for-tourists-discounts', 'for-tourists-bonuses', 'for-tourists-how-it-works', 'for-tourists-get-points'],
             scrollOverflow: true,
             css3: true,
             scrollingSpeed: 1000,

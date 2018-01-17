@@ -42,9 +42,22 @@
     bottom: 0px;
     right: -100px;
 
-
 #section2-9
   background $blue
+  position relative
+  &:after
+    pseudo(block, absolute)
+    height 50%
+    top 0
+    left 0
+    right 0
+    bottom auto
+    background $yellow2
+
+  +mobile()
+    .back-blue
+      padding-bottom 50px
+
   h3
     text-align center
     color $white
@@ -58,28 +71,30 @@
     +mobile()
       top: 1650px
 
-  .container-double-last
-    background $blue
-    padding-top 75px
-    padding-bottom 75px
-    margin-bottom 117px
+  .container-white
     +mobile()
       padding-top 0
-      margin-bottom 0
-    &:after
-      height 50%
-      top 0
-      bottom auto
-      background $yellow2
-      //+mobile()
-      //  display none
-    .container-white
+    .row
+      padding 140px 0
       +mobile()
-        padding-top 0
+        padding 50px 0
+      .button
+        margin 0 auto 44px
+        max-width 360px
+
+
++iphone()
+  #section2-1, #section2-2, #section2-3, #section2-4, #section2-5, #section2-6, #section2-7, #section2-8, #section2-9, #section2-10
+    .container
+      padding-left 30px
+      padding-right 30px
+  #section2-1
+    nav
+      .container
+        padding-left 15px
+        padding-right 15px
+  #section2-1, #section2-9
+    .container-white
       .row
-        padding 140px 0
-        +mobile()
-          padding 50px 0
-        .button
-          margin 0 auto 44px
-          max-width 360px
+        padding-left 15px
+        padding-right 15px
