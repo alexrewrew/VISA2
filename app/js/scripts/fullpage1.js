@@ -108,6 +108,12 @@
 
     if (window.matchMedia("(min-width: 768px)").matches) {
         createFullpage1();
+        $(function () {
+            $('.overflow-first').slimScroll({
+                height: 'auto'
+            });
+        });
+
     }
 
     var destroy = false;

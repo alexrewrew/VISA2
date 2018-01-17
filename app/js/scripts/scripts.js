@@ -2,7 +2,10 @@
     "use strict";
 
 
+
+
     $(document).ready(function () {
+
 
         $(".smooth").click(function (event) {
             event.preventDefault();
@@ -16,13 +19,6 @@
         $('#menu-trigger').click(function () {
            $('body').toggleClass('open');
            $('.nav-panel').slideToggle();
-
-        });
-
-        $(function () {
-            $('.overflow-first').slimScroll({
-                height: 'auto'
-            });
         });
 
 
@@ -37,6 +33,8 @@
             $('.choice1').toggleClass('transform');
             $('.button-choice1').toggleClass('opacity');
         });
+
+
 
 
     });

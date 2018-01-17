@@ -6,14 +6,17 @@
     flex 1 1 97px
     max-width 97px
     +mobile()
-      max-width 60px
-      flex 1 1 60px
+      max-width 50px
+      flex 1 1 50px
     img
       position relative
       left -50px
       top -9px
       +portrait()
         left: -25px
+      +mobile()
+        max-height: 70px;
+        max-width 70px
 
 .advantage-mobile
   display none

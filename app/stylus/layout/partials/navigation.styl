@@ -1,13 +1,6 @@
 @import '../../utilities/vars'
 @import '../../utilities/mixins'
 
-.fp-viewing-for-tourists, .fp-viewing-for-partners
-  nav
-    background $blue
-    max-height unset
-    .link-logo
-      max-width 125px
-
 nav
   transitions()
   position absolute
@@ -18,8 +11,12 @@ nav
   background $trans
 
   max-height 60px
+  +portrait()
+    max-height 100px
   .link-logo
     max-width 60px
+    +portrait()
+      max-width 100px
 
   +mobile()
     position fixed

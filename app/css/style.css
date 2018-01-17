@@ -315,7 +315,7 @@ h2 {
 }
 @media (max-width: 767px) {
 	h2 {
-		font-size: 1.5rem;
+		font-size: 1.25rem;
 		font-weight: 700;
 	}
 }
@@ -353,7 +353,7 @@ h5 {
 }
 @media (max-width: 767px) {
 	h5 {
-		font-size: 1.125em;
+		font-size: 1rem;
 		line-height: 1.2;
 	}
 }
@@ -369,7 +369,7 @@ h6 {
 .h6-section {
 	color: #3d1617;
 	margin-bottom: 1rem;
-	margin-top: 2rem;
+	margin-top: 1.5rem;
 }
 p {
 	font-family: 'MuseoSans', sans-serif;
@@ -437,7 +437,7 @@ a:focus {
 }
 .link-partners {
 	display: block;
-	margin-bottom: 60px;
+	margin-bottom: 40px;
 }
 .link-partners svg g, .link-partners svg rect, .link-partners svg polygon {
 	fill: #fff;
@@ -463,10 +463,10 @@ a:focus {
 	margin-left: 35px;
 }
 .link-partners h4 {
-	font-size: 1.5rem;
+	font-size: 1.25rem;
 	line-height: 1.25;
 	color: #3d1617;
-	height: 90px;
+	height: 80px;
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: -ms-flexbox;
@@ -475,7 +475,7 @@ a:focus {
 	-webkit-align-items: center;
 	-ms-flex-align: center;
 	        align-items: center;
-	margin-bottom: 20px;
+	margin-bottom: 15px;
 }
 @media (min-width: 768px) and (max-width: 991px) {
 	.link-partners h4 {
@@ -523,6 +523,7 @@ a:focus {
 	.link-partners .advantage .advantage-image svg {
 		left: 0;
 		top: 0;
+		max-height: 50px;
 		max-width: 50px;
 		height: auto;
 	}
@@ -532,6 +533,10 @@ a:focus {
 		    -ms-flex: 1 1 100%;
 		        flex: 1 1 100%;
 		max-width: 100%;
+	}
+	.link-partners .advantage .advantage-image img {
+		max-height: 50px;
+		max-width: 50px;
 	}
 }
 button {
@@ -656,8 +661,8 @@ main {
 	}
 }
 .container-white .row {
-	padding-top: 106px;
-	padding-bottom: 106px;
+	padding-top: 80px;
+	padding-bottom: 80px;
 	background: #fff;
 	-webkit-box-shadow: 0 7px 14px 0 rgba(0,0,0,.17);
 	        box-shadow: 0 7px 14px 0 rgba(0,0,0,.17);
@@ -705,13 +710,6 @@ main {
 .back-green {
 	background: #b8d50a;
 }
-.fp-viewing-for-tourists nav, .fp-viewing-for-partners nav {
-	background: #4babe0;
-	max-height: unset;
-}
-.fp-viewing-for-tourists nav .link-logo, .fp-viewing-for-partners nav .link-logo {
-	max-width: 125px;
-}
 nav {
 	-webkit-transition: all .4s ease;
 	     -o-transition: all .4s ease;
@@ -724,8 +722,18 @@ nav {
 	background: transparent;
 	max-height: 60px;
 }
+@media (min-width: 768px) and (max-width: 991px) {
+	nav {
+		max-height: 100px;
+	}
+}
 nav .link-logo {
 	max-width: 60px;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+	nav .link-logo {
+		max-width: 100px;
+	}
 }
 @media (max-width: 767px) {
 	nav {
@@ -1304,17 +1312,11 @@ footer:after {
 	background: #4babe0;
 	position: relative;
 }
-#section1-1 .fp-tableCell {
-	padding-top: 0;
-}
 #section1-1 .fp-scroller {
 	overflow: visible;
 }
-#section1-1 .section-first {
-	padding-top: 80px;
-}
 @media (max-width: 767px) {
-	#section1-1 .section-first {
+	#section1-1 .fp-scroller {
 		padding-top: 20px;
 	}
 }
@@ -1458,6 +1460,11 @@ footer:after {
 	background: #b8d50a;
 	position: relative;
 }
+@media (max-width: 767px) {
+	#section1-14 {
+		padding-bottom: 50px;
+	}
+}
 #section1-14:after {
 	content: '';
 	display: block;
@@ -1467,11 +1474,6 @@ footer:after {
 	right: 0;
 	height: 50%;
 	background: #4babe0;
-}
-@media (max-width: 767px) {
-	#section1-14 {
-		padding-top: 50px;
-	}
 }
 #section1-14 .container-white .row {
 	padding: 140px 0;
@@ -1489,7 +1491,7 @@ footer:after {
 	padding-top: 0;
 }
 @media (min-width: 375px) and (max-width: 767px) {
-	#section1-1 .container, #section1-2 .container, #section1-3 .container, #section1-4 .container, #section1-5 .container, #section1-6 .container, #section1-7 .container, #section1-8 .container, #section1-9 .container, #section1-10 .container, #section1-11 .container, #section1-12 .container, #section1-13 .container {
+	#section1-1 .container, #section1-2 .container, #section1-3 .container, #section1-4 .container, #section1-5 .container, #section1-6 .container, #section1-7 .container, #section1-8 .container, #section1-9 .container, #section1-10 .container, #section1-11 .container, #section1-12 .container, #section1-13 .container, #section1-14 .container, #section1-15 .container {
 		padding-left: 30px;
 		padding-right: 30px;
 	}
@@ -1497,7 +1499,7 @@ footer:after {
 		padding-left: 15px;
 		padding-right: 15px;
 	}
-	#section1-2 .container-white .row, #section1-12 .container-white .row, #section1-13 .container-white .row {
+	#section1-2 .container-white .row, #section1-12 .container-white .row, #section1-14 .container-white .row {
 		padding-left: 15px;
 		padding-right: 15px;
 	}
@@ -1511,9 +1513,6 @@ footer:after {
 #section2-1 {
 	background: #4babe0;
 	position: relative;
-}
-#section2-1 .section-first {
-	padding-top: 80px;
 }
 @media (max-width: 767px) {
 	#section2-1 .section-first {
@@ -1676,7 +1675,7 @@ footer:after {
 	-webkit-transition: all .4s ease;
 	     -o-transition: all .4s ease;
 	        transition: all .4s ease;
-	height: 375px;
+	height: 360px;
 }
 .choice img {
 	max-width: 475px;
@@ -1799,11 +1798,11 @@ footer:after {
 }
 @media (max-width: 767px) {
 	.advantage-image {
-		max-width: 60px;
+		max-width: 50px;
 		-webkit-box-flex: 1;
-		-webkit-flex: 1 1 60px;
-		    -ms-flex: 1 1 60px;
-		        flex: 1 1 60px;
+		-webkit-flex: 1 1 50px;
+		    -ms-flex: 1 1 50px;
+		        flex: 1 1 50px;
 	}
 }
 .advantage-image img {
@@ -1814,6 +1813,12 @@ footer:after {
 @media (min-width: 768px) and (max-width: 991px) {
 	.advantage-image img {
 		left: -25px;
+	}
+}
+@media (max-width: 767px) {
+	.advantage-image img {
+		max-height: 70px;
+		max-width: 70px;
 	}
 }
 .advantage-mobile {
@@ -1865,6 +1870,7 @@ footer:after {
 #fp-nav.right {
 	right: 109px;
 	opacity: 0;
+	z-index: -1;
 }
 @media (min-width: 992px) and (max-width: 1199px) {
 	#fp-nav.right {
@@ -1878,9 +1884,7 @@ footer:after {
 }
 #fp-nav.right.visible {
 	opacity: 1;
-}
-#fp-nav {
-	z-index: 99999;
+	z-index: 9999;
 }
 #fp-nav ul li {
 	width: 18px;
@@ -2007,8 +2011,9 @@ footer:after {
 }
 .mask-phone {
 	position: absolute;
-	top: calc(50% - (542px / 2));
+	top: calc(50% - (512px / 2));
 	left: 0;
+	max-width: 340px;
 }
 .mask h3 {
 	font-family: UA-brand;
@@ -2021,13 +2026,13 @@ footer:after {
 	width: 100%;
 	left: calc(50% + 402px);
 	text-align: center;
-	bottom: calc(50% + (400px / 2));
+	bottom: calc(50% + (340px / 2));
 }
 .mask .button {
 	position: absolute;
 	width: 262px;
 	left: calc(553px - 131px);
-	top: calc(50% + (505px / 2));
+	top: calc(50% + (485px / 2));
 }
 .mask .button:hover span {
 	background: #cf4d7a;
@@ -2035,13 +2040,14 @@ footer:after {
 }
 .mask .screenshot {
 	position: absolute;
-	top: calc(50% - (395px / 2));
-	left: 36px;
+	top: calc(50% - (373px / 2));
+	left: 34px;
 	opacity: 0;
 	z-index: 1;
 	-webkit-transition: all .4s ease;
 	     -o-transition: all .4s ease;
 	        transition: all .4s ease;
+	max-width: 237px;
 }
 .mask .screenshot.visible {
 	opacity: 1;
@@ -2058,8 +2064,9 @@ footer:after {
 }
 .mask2 .mask-desktop {
 	position: absolute;
-	top: calc(50% - (433px / 2));
+	top: calc(50% - (400px / 2));
 	right: -26px;
+	max-width: 590px;
 }
 @media (min-width: 992px) and (max-width: 1199px) {
 	.mask2 .mask-desktop {
@@ -2072,9 +2079,10 @@ footer:after {
 	}
 }
 .mask2 .screenshot {
-	top: calc(50% - (385px / 2));
-	right: -1px;
+	top: calc(50% - (362px / 2));
+	right: -7px;
 	left: auto;
+	max-width: 550px;
 }
 @media (min-width: 992px) and (max-width: 1199px) {
 	.mask2 .screenshot {
@@ -2092,7 +2100,7 @@ footer:after {
 }
 .mask2 .button {
 	right: 814px;
-	top: calc(50% + (530px / 2));
+	top: calc(50% + (500px / 2));
 	left: auto;
 }
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -2105,6 +2113,11 @@ footer:after {
 		right: 590px;
 		top: calc(50% + (625px / 2));
 	}
+}
+.fp-viewing-for-tourists-museums-and-galleries .mask, .fp-viewing-for-partners-excursions .mask, .fp-viewing-for-tourists-event-companies .mask, .fp-viewing-for-partners-hotels .mask, .fp-viewing-for-partners-loyalty-system .mask, .fp-viewing-for-partners-statistics .mask, .fp-viewing-for-tourists-places .mask, .fp-viewing-for-tourists-tours .mask, .fp-viewing-for-tourists-excursions .mask, .fp-viewing-for-tickets-for-tourists-events .mask, .fp-viewing-for-tickets-for-tourists-transport .mask, .fp-viewing-for-tourists-booking .mask, .fp-viewing-for-tourists-entertainment .mask, .fp-viewing-for-tourists-discounts .mask, .fp-viewing-for-tourists-bonuses .mask {
+	-webkit-transform: none;
+	    -ms-transform: none;
+	        transform: none;
 }
 .counter {
 	padding-top: 20px;

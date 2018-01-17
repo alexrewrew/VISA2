@@ -4,13 +4,9 @@
 
 #section1-1
   background $blue
-  position: relative;
-  .fp-tableCell
-    padding-top 0
+  position: relative
   .fp-scroller
     overflow visible
-  .section-first
-    padding-top 80px
     +mobile()
       padding-top 20px
 
@@ -127,6 +123,8 @@
 #section1-14
   background $green
   position relative
+  +mobile()
+    padding-bottom 50px
   &:after
     pseudo(block, absolute)
     bottom 0
@@ -134,8 +132,6 @@
     right 0
     height 50%
     background $blue
-  +mobile()
-    padding-top 50px
   .container-white
     .row
       padding 140px 0
@@ -150,7 +146,7 @@
     padding-top 0
 
 +iphone()
-  #section1-1, #section1-2, #section1-3, #section1-4, #section1-5, #section1-6, #section1-7, #section1-8, #section1-9, #section1-10, #section1-11, #section1-12,, #section1-13
+  #section1-1, #section1-2, #section1-3, #section1-4, #section1-5, #section1-6, #section1-7, #section1-8, #section1-9, #section1-10, #section1-11, #section1-12, #section1-13, #section1-14, #section1-15
     .container
       padding-left 30px
       padding-right 30px
@@ -159,7 +155,7 @@
       .container
         padding-left 15px
         padding-right 15px
-  #section1-2, #section1-12, #section1-13
+  #section1-2, #section1-12, #section1-14
     .container-white
       .row
         padding-left 15px

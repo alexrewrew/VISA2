@@ -18,9 +18,9 @@
 
   &-phone
     position absolute
-    top calc(50% - (542px / 2))
+    top calc(50% - (512px / 2))
     left 0
-
+    max-width 340px
 
   h3
     font-family: UA-brand;
@@ -33,16 +33,15 @@
     width 100%
     left calc(50% + 402px)
     text-align center
-    //top 8%
 
-    bottom calc(50% + (400px / 2))
+    bottom calc(50% + (340px / 2))
 
   .button
     position absolute
     width 262px
     left: calc(553px - 131px);
 
-    top calc(50% + (505px / 2))
+    top calc(50% + (485px / 2))
     &:hover
       span
         background $pink2
@@ -50,11 +49,12 @@
 
   .screenshot
     position absolute
-    top calc(50% - (395px / 2))
-    left 36px
+    top calc(50% - (373px / 2))
+    left 34px
     opacity 0
     z-index 1
     transitions()
+    max-width 237px
 
   .screenshot.visible
     opacity 1
@@ -63,23 +63,23 @@
 .mask.visible
   transform none
 
-
-
 .mask2
   right calc(50% - ((1010px / 2)))
   left auto
   .mask-desktop
     position absolute
-    top: calc(50% - (433px / 2));
+    top: calc(50% - (400px / 2));
     right: -26px;
+    max-width 590px
     +tablet()
       right -56px
     +portrait()
       right -106px
   .screenshot
-    top: calc(50% - (385px / 2));
-    right: -1px;
+    top: calc(50% - (362px / 2));
+    right: -7px;
     left auto
+    max-width 550px
     +tablet()
       right -31px
     +portrait()
@@ -89,13 +89,18 @@
     right: calc(50% + 610px);
   .button
     right: 814px
-    top: calc(50% + (530px / 2));
+    top: calc(50% + (500px / 2));
     left auto
     +tablet()
       right: 710px;
     +portrait()
       right: 590px;
       top: calc(50% + (625px / 2));
+
+
+.fp-viewing-for-tourists-museums-and-galleries, .fp-viewing-for-partners-excursions, .fp-viewing-for-tourists-event-companies, .fp-viewing-for-partners-hotels, .fp-viewing-for-partners-loyalty-system, .fp-viewing-for-partners-statistics, .fp-viewing-for-tourists-places, .fp-viewing-for-tourists-tours, .fp-viewing-for-tourists-excursions, .fp-viewing-for-tickets-for-tourists-events, .fp-viewing-for-tickets-for-tourists-transport, .fp-viewing-for-tourists-booking, .fp-viewing-for-tourists-entertainment, .fp-viewing-for-tourists-discounts, .fp-viewing-for-tourists-bonuses
+  .mask
+    transform none
 
 
 
