@@ -124,8 +124,30 @@
           margin 0 auto 44px
           max-width 360px
 
+#section1-14
+  background $green
+  position relative
+  &:after
+    pseudo(block, absolute)
+    bottom 0
+    left 0
+    right 0
+    height 50%
+    background $blue
+  +mobile()
+    padding-top 50px
+  .container-white
+    .row
+      padding 140px 0
+      +mobile()
+        padding 50px 0
+      .button
+        margin 0 auto 44px
+        max-width 360px
 
-
+#section1-15
+  .fp-tableCell
+    padding-top 0
 
 +iphone()
   #section1-1, #section1-2, #section1-3, #section1-4, #section1-5, #section1-6, #section1-7, #section1-8, #section1-9, #section1-10, #section1-11, #section1-12,, #section1-13
