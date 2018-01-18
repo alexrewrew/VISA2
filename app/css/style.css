@@ -188,7 +188,6 @@ html {
 }
 body {
 	overflow-x: hidden;
-	font-family: 'MuseoSans', sans-serif;
 	font-size: 1rem;
 	font-weight: 400;
 	color: #000;
@@ -288,7 +287,6 @@ body.open .nav-icon span:nth-child(4) {
 	}
 }
 h1 {
-	font-family: 'MuseoSans', sans-serif;
 	font-size: 2.5rem;
 	font-weight: 900;
 	color: #ffe500;
@@ -304,7 +302,6 @@ h1 {
 	}
 }
 h2 {
-	font-family: 'MuseoSans', sans-serif;
 	font-size: 2.5rem;
 	font-weight: 900;
 	color: #fff;
@@ -320,7 +317,6 @@ h2 {
 	}
 }
 h3 {
-	font-family: 'MuseoSans', sans-serif;
 	font-size: 2rem;
 	font-weight: 700;
 	color: #4babe0;
@@ -329,7 +325,6 @@ h3 {
 	font-family: 'UA-brand', sans-serif;
 }
 h4 {
-	font-family: 'MuseoSans', sans-serif;
 	font-size: 1.75rem;
 	font-weight: 700;
 	color: #000;
@@ -343,7 +338,6 @@ h4 {
 	}
 }
 h5 {
-	font-family: 'MuseoSans', sans-serif;
 	font-size: 1.5rem;
 	font-weight: 500;
 	color: #fff;
@@ -358,7 +352,6 @@ h5 {
 	}
 }
 h6 {
-	font-family: 'MuseoSans', sans-serif;
 	font-size: 1.25rem;
 	font-weight: 700;
 	color: #4babe0;
@@ -372,12 +365,12 @@ h6 {
 	margin-top: 1.5rem;
 }
 p {
-	font-family: 'MuseoSans', sans-serif;
 	font-size: 1rem;
 	font-weight: 500;
 	color: #3d1617;
 	line-height: 1.75;
 	margin-bottom: 1rem;
+	font-family: 'MuseoSans', sans-serif;
 }
 hr {
 	border: 0;
@@ -527,13 +520,6 @@ a:focus {
 		max-width: 50px;
 		height: auto;
 	}
-	.link-partners .advantage .advantage-image {
-		-webkit-box-flex: 1;
-		-webkit-flex: 1 1 100%;
-		    -ms-flex: 1 1 100%;
-		        flex: 1 1 100%;
-		max-width: 100%;
-	}
 	.link-partners .advantage .advantage-image img {
 		max-height: 50px;
 		max-width: 50px;
@@ -611,9 +597,6 @@ ol {
 	line-height: 1.5;
 	color: #3d1617;
 }
-.img-responsive {
-	width: 100%;
-}
 main {
 	background: #fff;
 	-webkit-transition: all .4s ease;
@@ -633,20 +616,6 @@ main {
 .section .container {
 	position: relative;
 	z-index: 2;
-}
-.container-double {
-	position: relative;
-}
-.container-double:after {
-	content: '';
-	display: block;
-	position: absolute;
-	background: #f6de00;
-	bottom: 0;
-	height: 396px;
-	left: 0;
-	right: 0;
-	z-index: 1;
 }
 .container-white {
 	position: relative;
@@ -688,17 +657,6 @@ main {
 .container-white .row .button:hover span {
 	background: #cf4d7a;
 	color: #fff;
-}
-.container-double-partners:after {
-	background: #b8d50a;
-	height: 400px;
-}
-.container-double-partners .container-white {
-	padding-top: 0;
-}
-.container-double-partners .container-white .row {
-	padding-top: 102px;
-	padding-bottom: 102px;
 }
 .ornament {
 	position: absolute;
@@ -1632,43 +1590,6 @@ footer:after {
 		padding-right: 15px;
 	}
 }
-.volta {
-	float: right;
-	display: block;
-	position: relative;
-}
-.volta--text {
-	font-size: .625em;
-	color: #bebebe;
-	position: relative;
-	top: -3px;
-	margin-right: 5px;
-}
-.volta--visible svg {
-	width: 62px;
-}
-.volta--visible svg g {
-	fill: #bebebe;
-}
-.volta--hidden {
-	position: absolute;
-	right: 0;
-	top: 0;
-	height: 0;
-	overflow: hidden;
-	-webkit-transition: all .4s ease;
-	     -o-transition: all .4s ease;
-	        transition: all .4s ease;
-}
-.volta--hidden svg {
-	width: 62px;
-}
-.volta--hidden svg g {
-	fill: #7521e1;
-}
-.volta:hover .volta--hidden {
-	height: 100%;
-}
 .choice {
 	position: relative;
 	z-index: 10;
@@ -1825,8 +1746,7 @@ footer:after {
 	display: none;
 	position: relative;
 	width: 320px;
-	margin: 0 auto;
-	margin-top: 50px;
+	margin: 50px auto 0;
 }
 .advantage-mobile--phone {
 	width: 320px;
@@ -1890,9 +1810,7 @@ footer:after {
 	width: 18px;
 	height: 18px;
 	padding: 0;
-	margin: 0;
-	margin-bottom: 12px;
-	margin-top: 12px;
+	margin: 12px 0;
 }
 #fp-nav ul li:first-child, #fp-nav ul li:last-child, #fp-nav ul li:nth-child(2), #fp-nav ul li:nth-child(12), #fp-nav ul li:nth-child(13), #fp-nav ul li:nth-last-child(2) {
 	display: none;
@@ -1977,7 +1895,7 @@ footer:after {
 .mask {
 	position: fixed;
 	top: 0;
-	left: calc(50% - ((1010px / 2)));
+	left: calc(50% - 505px);
 	z-index: 2000;
 	height: 100%;
 	display: -webkit-box;
@@ -2001,7 +1919,7 @@ footer:after {
 }
 @media (min-width: 768px) and (max-width: 991px) {
 	.mask {
-		left: calc(50% - ((790px / 2)));
+		left: calc(50% - 395px);
 	}
 }
 @media (max-width: 767px) {
@@ -2011,28 +1929,27 @@ footer:after {
 }
 .mask-phone {
 	position: absolute;
-	top: calc(50% - (512px / 2));
+	top: calc(50% - 256px);
 	left: 0;
 	max-width: 340px;
 }
 .mask h3 {
-	font-family: UA-brand;
+	font-family: 'UA-brand', sans-serif;
 	font-size: 2.375rem;
 	font-weight: bold;
-	text-align: center;
 	color: #fff;
 	position: absolute;
 	max-width: 360px;
 	width: 100%;
 	left: calc(50% + 402px);
 	text-align: center;
-	bottom: calc(50% + (340px / 2));
+	bottom: calc(50% + 170px);
 }
 .mask .button {
 	position: absolute;
 	width: 262px;
-	left: calc(553px - 131px);
-	top: calc(50% + (485px / 2));
+	left: 422px;
+	top: calc(50% + 243px);
 }
 .mask .button:hover span {
 	background: #cf4d7a;
@@ -2040,7 +1957,7 @@ footer:after {
 }
 .mask .screenshot {
 	position: absolute;
-	top: calc(50% - (373px / 2));
+	top: calc(50% - 187px);
 	left: 34px;
 	opacity: 0;
 	z-index: 1;
@@ -2059,12 +1976,12 @@ footer:after {
 	        transform: none;
 }
 .mask2 {
-	right: calc(50% - ((1010px / 2)));
+	right: calc(50% - 505px);
 	left: auto;
 }
 .mask2 .mask-desktop {
 	position: absolute;
-	top: calc(50% - (400px / 2));
+	top: calc(50% - 200px);
 	right: -26px;
 	max-width: 590px;
 }
@@ -2079,7 +1996,7 @@ footer:after {
 	}
 }
 .mask2 .screenshot {
-	top: calc(50% - (362px / 2));
+	top: calc(50% - 181px);
 	right: -7px;
 	left: auto;
 	max-width: 550px;
@@ -2100,7 +2017,7 @@ footer:after {
 }
 .mask2 .button {
 	right: 814px;
-	top: calc(50% + (500px / 2));
+	top: calc(50% + 250px);
 	left: auto;
 }
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -2111,7 +2028,7 @@ footer:after {
 @media (min-width: 768px) and (max-width: 991px) {
 	.mask2 .button {
 		right: 590px;
-		top: calc(50% + (625px / 2));
+		top: calc(50% + 313px);
 	}
 }
 .fp-viewing-for-tourists-museums-and-galleries .mask, .fp-viewing-for-partners-excursions .mask, .fp-viewing-for-tourists-event-companies .mask, .fp-viewing-for-partners-hotels .mask, .fp-viewing-for-partners-loyalty-system .mask, .fp-viewing-for-partners-statistics .mask, .fp-viewing-for-tourists-places .mask, .fp-viewing-for-tourists-tours .mask, .fp-viewing-for-tourists-excursions .mask, .fp-viewing-for-tickets-for-tourists-events .mask, .fp-viewing-for-tickets-for-tourists-transport .mask, .fp-viewing-for-tourists-booking .mask, .fp-viewing-for-tourists-entertainment .mask, .fp-viewing-for-tourists-discounts .mask, .fp-viewing-for-tourists-bonuses .mask {
@@ -2146,7 +2063,6 @@ footer:after {
 .counter ul li {
 	color: #fff;
 	line-height: 1.75;
-	font-size: 700;
 }
 .counter .white {
 	margin: 0;
