@@ -79,7 +79,7 @@ gulp.task("scripts2", function () {
         // "app/libs/ddscrollspy/ddscrollspy.js",
         // "app/libs/jquery.maskedinput/dist/jquery.maskedinput.js",
         // "app/libs/jquery-validation/dist/jquery.validate.js",
-        'app/libs/jquery-slimscroll/jquery.slimscroll.js',
+        // 'app/libs/jquery-slimscroll/jquery.slimscroll.js',
         'app/libs/fullpage.js/vendors/jquery.easings.min.js',
         'app/libs/fullpage.js/vendors/scrolloverflow.js',
         'app/libs/fullpage.js/dist/jquery.fullpage.js'
@@ -182,6 +182,7 @@ gulp.task("watch", ["scripts1", "scripts2", "scripts3", "scripts4", "pug", "brow
     gulp.watch("app/libs/rew-sidenav/*.styl", ["stylus"]); //пошук scss файлів
     gulp.watch("app/pages/**/*.pug", ["pug"]); //пошук html файлів
     gulp.watch(["app/js/scripts/*.js"], ["scripts3"]); //пошук html файлів
+    gulp.watch(["app/js/scripts/*.js"], ["scripts4"]); //пошук html файлів
     gulp.watch(["app/libs/rew-sidenav/*.js"], ["scripts3"]); //пошук html файлів
     gulp.watch("app/*.html", browserSync.reload); //пошук html файлів
     gulp.watch("app/js/*.js", browserSync.reload); //пошук js файлів

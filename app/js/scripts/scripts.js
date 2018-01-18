@@ -2,8 +2,6 @@
     "use strict";
 
 
-
-
     $(document).ready(function () {
 
 
@@ -17,8 +15,8 @@
         });
 
         $('#menu-trigger').click(function () {
-           $('body').toggleClass('open');
-           $('.nav-panel').slideToggle();
+            $('body').toggleClass('open');
+            $('.nav-panel').slideToggle();
         });
 
 
@@ -33,8 +31,6 @@
             $('.choice1').toggleClass('transform');
             $('.button-choice1').toggleClass('opacity');
         });
-
-
 
 
     });

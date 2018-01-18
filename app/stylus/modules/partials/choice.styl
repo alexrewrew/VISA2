@@ -2,11 +2,9 @@
   position relative
   z-index 10
   transitions()
-  height 360px
+  height 350px
   img
-    max-width 475px
-    +portrait()
-      max-width 500px
+    max-width 450px
 
 
   +mobile()
@@ -19,10 +17,10 @@
 
 
 .choice1
-    left -75px
+    left -15px
 
 .choice2
-  left 20px
+  left 25px
   top -25px
 
 .choice.transform
@@ -72,3 +70,13 @@
 
 .choice-description.active
   opacity 1
+
+
+.button-choice1
+  +mobile()
+    display none
+
+.button-choice1a
+  display none
+  +mobile()
+    display block

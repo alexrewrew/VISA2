@@ -99,8 +99,7 @@
                 }
             },
             afterResize: function () {
-                $.fn.fullpage.destroy('all');
-                createFullpage1();
+                $.fn.fullpage.reBuild()
             }
         });
     }
@@ -108,15 +107,10 @@
 
     if (window.matchMedia("(min-width: 768px)").matches) {
         createFullpage1();
-        $(function () {
-            $('.overflow-first').slimScroll({
-                height: 'auto'
-            });
-        });
-
     }
 
     var destroy = false;
+
     $(window).on('load resize', function () {
 
         if (window.matchMedia("(max-width: 767px)").matches) {
@@ -130,12 +124,6 @@
                 createFullpage1();
                 destroy = false;
             }
-
-            $(function () {
-                $('.overflow-first').slimScroll({
-                    height: 'auto'
-                });
-            });
 
         }
     });
