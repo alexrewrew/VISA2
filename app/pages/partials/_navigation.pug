@@ -2,7 +2,7 @@ nav
     .container
         .row
             .col-2.col-md-2.col-lg-1
-                a(href='index.html' title='').link-logo
+                a(href='./' title='').link-logo
                     img(src='img/logo/logo.svg' title='' alt='')
 
 
@@ -10,7 +10,7 @@ nav
             .col-8.col-md-5.col-lg-5
                 ul.menu-buttons
                     li
-                        a(href='index.html').button.active
+                        a(href='./').button.active
                             span Туристам
                     li
                         a(href='for-partners.html').button
@@ -29,10 +29,13 @@ nav
                     ul.menu
 
                         li
-                            a(href='index.html' title='') Головна
+                            a(href='./' title='') Головна
                         li
-                            a(href='#for-tourists-places' title='') Переваги для туристів
+                            a(href='#for-tourists-places' title='').hidden-xs Переваги для туристів
+                            a(href='#section1-3' title='').visible-xs.smooth Переваги для туристів
                         li
-                            a(href='#for-tourists-how-it-works' title='') Як це працює
+                            a(href='#for-tourists-how-it-works' title='').hidden-xs Як це працює
+                            a(href='#section1-12' title='').visible-xs.smooth Як це працює
                         li
-                            a(href='#for-tourists-get-points' title='') Нарахування балів
+                            a(href='#for-tourists-get-points' title='').hidden-xs Нарахування балів
+                            a(href='#section1-13' title='').visible-xs.smooth Нарахування балів

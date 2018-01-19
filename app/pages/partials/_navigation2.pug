@@ -2,7 +2,7 @@ nav
     .container
         .row
             .col-2.col-md-2.col-lg-1
-                a(href='index.html' title='').link-logo
+                a(href='./' title='').link-logo
                     img(src='img/logo/logo.svg' title='' alt='')
 
 
@@ -10,7 +10,7 @@ nav
             .col-8.col-md-5.col-lg-5
                 ul.menu-buttons
                     li
-                        a(href='index.html').button
+                        a(href='./').button
                             span Туристам
                     li
                         a(href='for-partners.html').button.active
@@ -27,6 +27,7 @@ nav
                     ul.menu.menu-partners
 
                         li
-                            a(href='index.html' title='') Головна
+                            a(href='./' title='') Головна
                         li
-                            a(href='#for-partners-excursions' title='') Переваги для партнерів
+                            a(href='#for-partners-excursions' title='').hidden-xs Переваги для партнерів
+                            a(href='#section2-3' title='').visible-xs.smooth Переваги для партнерів

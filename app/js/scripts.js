@@ -32,6 +32,12 @@
             $('.button-choice1').toggleClass('opacity');
         });
 
+        if (window.matchMedia("(max-width: 767px)").matches) {
+            $('.menu > li > a').click(function () {
+                $('body').toggleClass('open');
+                $(".nav-panel").slideToggle();
+            });
+        }
 
     });
 })();

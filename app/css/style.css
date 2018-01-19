@@ -230,6 +230,19 @@ body.open .nav-icon span:nth-child(4) {
 	width: 0;
 	left: 50%;
 }
+@media (max-width: 767px) {
+	.hidden-xs {
+		display: none !important;
+	}
+}
+.visible-xs {
+	display: none !important;
+}
+@media (max-width: 767px) {
+	.visible-xs {
+		display: block !important;
+	}
+}
 .text-justify {
 	text-align: justify !important;
 }

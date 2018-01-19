@@ -34,3 +34,12 @@ body.open
         top 18px
         width 0%
         left 50%
+
+.hidden-xs
+  +mobile()
+    display none !important
+
+.visible-xs
+  display none !important
+  +mobile()
+    display block !important
