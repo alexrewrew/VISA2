@@ -307,6 +307,7 @@ h1 {
 	margin-bottom: .3rem;
 	font-family: 'UA-brand', sans-serif;
 	display: inline-block;
+	margin-right: 7px;
 }
 @media (max-width: 767px) {
 	h1 {
@@ -1130,6 +1131,7 @@ footer:after {
 }
 .footer-partners li img {
 	margin: 0;
+	max-height: 48px;
 }
 .footer-partners li:after {
 	content: '';
