@@ -3,7 +3,7 @@
 
     function createFullpage2() {
         $('#fullpage2').fullpage({
-            anchors: ['for-partners', 'for-partners-whom', 'for-partners-excursions', 'for-tourists-museums-and-galleries', 'for-tourists-event-companies', 'for-partners-hotels', 'for-partners-statistics', 'for-partners-loyalty-system', 'for-partners-become', 'for-partners-footer'],
+            anchors: ['for-partners', 'for-partners-whom', 'for-partners-excursions', 'for-partners-museums-and-galleries', 'for-partners-event-companies', 'for-partners-hotels', 'for-partners-statistics', 'for-partners-loyalty-system', 'for-partners-become', 'for-partners-footer'],
             scrollOverflow: true,
             css3: true,
             scrollingSpeed: 1000,
@@ -76,8 +76,7 @@
                 }
             },
             afterResize: function () {
-                $.fn.fullpage.destroy('all');
-                createFullpage2();
+                $.fn.fullpage.reBuild()
             }
         });
     }
@@ -85,11 +84,6 @@
 
     if (window.matchMedia("(min-width: 768px)").matches) {
         createFullpage2();
-        $(function () {
-            $('.overflow-first').slimScroll({
-                height: 'auto'
-            });
-        });
 
     }
 
@@ -107,12 +101,6 @@
                 createFullpage2();
                 destroy = false;
             }
-
-            $(function () {
-                $('.overflow-first').slimScroll({
-                    height: 'auto'
-                });
-            });
         }
     });
 })();

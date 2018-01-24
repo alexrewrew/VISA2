@@ -382,6 +382,7 @@ h6 {
 	color: #3d1617;
 	margin-bottom: 1rem;
 	margin-top: 1.5rem;
+	font-weight: 400;
 }
 p {
 	font-size: 1rem;
@@ -451,8 +452,17 @@ a:focus {
 	display: block;
 	margin-bottom: 40px;
 }
-.link-partners svg g, .link-partners svg rect, .link-partners svg polygon {
+.link-partners svg g, .link-partners svg path, .link-partners svg rect {
 	fill: #fff;
+	-webkit-transition: all .4s ease;
+	     -o-transition: all .4s ease;
+	        transition: all .4s ease;
+}
+.link-partners svg polygon {
+	stroke: #fff;
+}
+.link-partners svg ellipse {
+	fill: transparent;
 	-webkit-transition: all .4s ease;
 	     -o-transition: all .4s ease;
 	        transition: all .4s ease;
@@ -499,14 +509,24 @@ a:focus {
 	left: -62px;
 	top: 15px;
 }
-.link-partners:hover svg g, .link-partners:hover svg rect, .link-partners:hover svg polygon {
+.link-partners:hover svg g, .link-partners:hover svg path, .link-partners:hover svg rect {
 	fill: #3d1617;
 }
-.link-partners:hover svg polygon {
+@media (max-width: 767px) {
+	.link-partners:hover svg g, .link-partners:hover svg path, .link-partners:hover svg rect {
+		fill: #fff;
+	}
+}
+.link-partners:hover svg ellipse, .link-partners:hover svg polygon {
 	stroke: #3d1617;
 }
 .link-partners:hover span {
 	color: #3d1617;
+}
+@media (max-width: 767px) {
+	.link-partners:hover span {
+		color: #fff;
+	}
 }
 @media (max-width: 767px) {
 	.link-partners {
@@ -615,6 +635,7 @@ ol {
 	font-weight: 500;
 	line-height: 1.5;
 	color: #3d1617;
+	font-family: 'MuseoSans', sans-serif;
 }
 main {
 	background: #fff;
@@ -758,7 +779,7 @@ nav .link-logo {
 		-webkit-flex-wrap: wrap;
 		    -ms-flex-wrap: wrap;
 		        flex-wrap: wrap;
-		padding: 30px 0;
+		padding: 10px 0;
 	}
 }
 @media (max-width: 767px) {
@@ -808,6 +829,11 @@ nav .link-logo {
 	color: #fff;
 	position: relative;
 }
+@media (min-width: 992px) and (max-width: 1199px) {
+	.menu li a {
+		font-size: .75rem;
+	}
+}
 @media (max-width: 767px) {
 	.menu li a {
 		color: #3d1617;
@@ -845,7 +871,6 @@ nav .link-logo {
 	-webkit-flex-direction: row;
 	    -ms-flex-direction: row;
 	        flex-direction: row;
-	padding: 0 34px;
 	-webkit-box-align: center;
 	-webkit-align-items: center;
 	-ms-flex-align: center;
@@ -855,6 +880,11 @@ nav .link-logo {
 	-ms-flex-pack: justify;
 	        justify-content: space-between;
 	height: 100%;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+	.menu-buttons {
+		padding: 0;
+	}
 }
 @media (min-width: 768px) and (max-width: 991px) {
 	.menu-buttons {
@@ -1307,7 +1337,7 @@ footer:after {
 	padding-top: 0;
 }
 #section1-2 {
-	background: #f6de00;
+	background: #b8d50a;
 	position: relative;
 }
 #section1-2:after {
@@ -1319,6 +1349,14 @@ footer:after {
 	right: 0;
 	height: 50%;
 	background: #4babe0;
+}
+#section1-2b {
+	background: #b8d50a;
+}
+@media (max-width: 767px) {
+	#section1-2b {
+		padding-top: 50px;
+	}
 }
 #section1-3 .ornament {
 	bottom: -350px;
@@ -1451,7 +1489,7 @@ footer:after {
 	padding-top: 0;
 }
 @media (min-width: 355px) and (max-width: 767px) {
-	#section1-1 .container, #section1-2 .container, #section1-3 .container, #section1-4 .container, #section1-5 .container, #section1-6 .container, #section1-7 .container, #section1-8 .container, #section1-9 .container, #section1-10 .container, #section1-11 .container, #section1-12 .container, #section1-13 .container, #section1-14 .container, #section1-15 .container {
+	#section1-1 .container, #section1-2 .container, #section1-2b .container, #section1-3 .container, #section1-4 .container, #section1-5 .container, #section1-6 .container, #section1-7 .container, #section1-8 .container, #section1-9 .container, #section1-10 .container, #section1-11 .container, #section1-12 .container, #section1-13 .container, #section1-14 .container, #section1-15 .container {
 		padding-left: 30px;
 		padding-right: 30px;
 	}
@@ -1752,6 +1790,29 @@ footer:after {
 		max-width: 70px;
 	}
 }
+.advantage-heading {
+	-webkit-box-flex: 1;
+	-webkit-flex: 1 1 calc(100% - 97px);
+	    -ms-flex: 1 1 calc(100% - 97px);
+	        flex: 1 1 calc(100% - 97px);
+	max-width: calc(100% - 97px);
+	padding-right: 40px;
+}
+@media (max-width: 767px) {
+	.advantage-heading {
+		padding-right: 0;
+		-webkit-box-flex: 1;
+		-webkit-flex: 1 1 100%;
+		    -ms-flex: 1 1 100%;
+		        flex: 1 1 100%;
+		max-width: 100%;
+	}
+}
+@media (min-width: 768px) and (max-width: 991px) {
+	.advantage-heading {
+		padding-right: 0;
+	}
+}
 .advantage-mobile {
 	display: none;
 	position: relative;
@@ -1822,9 +1883,6 @@ footer:after {
 	padding: 0;
 	margin: 12px 0;
 }
-#fp-nav ul li:first-child, #fp-nav ul li:last-child, #fp-nav ul li:nth-child(2), #fp-nav ul li:nth-child(12), #fp-nav ul li:nth-child(13), #fp-nav ul li:nth-last-child(2) {
-	display: none;
-}
 #fp-nav ul li .fp-tooltip {
 	background: #fff;
 	color: #3d1617;
@@ -1875,6 +1933,12 @@ footer:after {
 	width: 12px;
 	height: 12px;
 	margin: 3px;
+}
+#fullpage + #fp-nav ul li:nth-child(1), #fullpage + #fp-nav ul li:nth-child(2), #fullpage + #fp-nav ul li:nth-child(3), #fullpage + #fp-nav ul li:nth-last-child(1), #fullpage + #fp-nav ul li:nth-last-child(2), #fullpage + #fp-nav ul li:nth-last-child(3), #fullpage + #fp-nav ul li:nth-last-child(4) {
+	display: none;
+}
+#fullpage2 + #fp-nav ul li:nth-child(1), #fullpage2 + #fp-nav ul li:nth-child(2), #fullpage2 + #fp-nav ul li:nth-last-child(1), #fullpage2 + #fp-nav ul li:nth-last-child(2) {
+	display: none;
 }
 #fp-nav ul li a.active span, #fp-nav ul li:hover a span, #fp-nav ul li:hover a.active span {
 	border: 4px solid #fff;
@@ -2041,7 +2105,7 @@ footer:after {
 		top: calc(50% + 313px);
 	}
 }
-.fp-viewing-for-tourists-museums-and-galleries .mask, .fp-viewing-for-partners-excursions .mask, .fp-viewing-for-tourists-event-companies .mask, .fp-viewing-for-partners-hotels .mask, .fp-viewing-for-partners-loyalty-system .mask, .fp-viewing-for-partners-statistics .mask, .fp-viewing-for-tourists-places .mask, .fp-viewing-for-tourists-tours .mask, .fp-viewing-for-tourists-excursions .mask, .fp-viewing-for-tickets-for-tourists-events .mask, .fp-viewing-for-tickets-for-tourists-transport .mask, .fp-viewing-for-tourists-booking .mask, .fp-viewing-for-tourists-entertainment .mask, .fp-viewing-for-tourists-discounts .mask, .fp-viewing-for-tourists-bonuses .mask {
+.fp-viewing-for-partners-museums-and-galleries .mask, .fp-viewing-for-partners-excursions .mask, .fp-viewing-for-partners-event-companies .mask, .fp-viewing-for-partners-hotels .mask, .fp-viewing-for-partners-loyalty-system .mask, .fp-viewing-for-partners-statistics .mask, .fp-viewing-for-tourists-places .mask, .fp-viewing-for-tourists-tours .mask, .fp-viewing-for-tourists-excursions .mask, .fp-viewing-for-tourists-tickets-for-events .mask, .fp-viewing-for-tourists-tickets-for-transport .mask, .fp-viewing-for-tourists-booking .mask, .fp-viewing-for-tourists-entertainment .mask, .fp-viewing-for-tourists-discounts .mask, .fp-viewing-for-tourists-bonuses .mask {
 	-webkit-transform: none;
 	    -ms-transform: none;
 	        transform: none;

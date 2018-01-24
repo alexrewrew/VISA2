@@ -35,8 +35,14 @@ a
   display block
   margin-bottom 40px
   svg
-    g, rect, polygon
+    g, path, rect
       fill $white
+      transitions()
+    polygon
+      stroke $white
+      //transitions()
+    ellipse
+      fill $trans
       transitions()
   span
     display flex
@@ -54,6 +60,7 @@ a
     display: flex;
     align-items: center;
     margin-bottom 15px
+
     +portrait()
       font-size 1.25rem
 
@@ -65,12 +72,16 @@ a
 
   &:hover
     svg
-      g, rect, polygon
+      g, path, rect
         fill $darkred
-      polygon
+        +mobile()
+          fill $white
+      ellipse, polygon
         stroke $darkred
     span
       color $darkred
+      +mobile()
+        color $white
 
   +mobile()
     margin-bottom 60px

@@ -1,18 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="130px" height="102px" viewBox="0 0 130 102" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="112px" height="86px" viewBox="0 0 112 86" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 47 (45396) - http://www.bohemiancoding.com/sketch -->
-    <title>Group 9</title>
+    <title>Combined Shape</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Partner_ALL" transform="translate(-243.000000, -1244.000000)" fill="#FFFFFF">
-            <g id="Group-11" transform="translate(238.000000, 1239.000000)">
-                <g id="Group-9">
-                    <g id="tour-copy" transform="translate(56.959748, 57.613430) rotate(8.000000) translate(-56.959748, -57.613430) translate(6.959748, 7.113430)" fill-rule="nonzero">
-                        <path d="M61.1011743,0 L0,61.5836197 L38.8825655,100.773196 L99.9837398,39.1895762 L61.1011743,0 Z M38.4760385,90.305723 L10.3854708,61.9933566 L61.5077014,10.4674729 L89.598269,38.7798393 L38.4760385,90.305723 Z" id="Shape"></path>
-                        <rect id="Rectangle-path" transform="translate(56.732347, 35.666918) rotate(-135.000000) translate(-56.732347, -35.666918) " x="41.5662739" y="31.7039268" width="30.3321458" height="7.9259817"></rect>
-                    </g>
-                    <polygon id="Path-11" transform="translate(93.008130, 54.536082) rotate(-8.000000) translate(-93.008130, -54.536082) " points="88.6393881 26.6988663 101.896316 16.6534784 126.424093 48.9816019 68.6845178 93.08863 55.9807363 75.6239513 49.9918699 79.4547161 67.3009247 103.14433 136.02439 50.359743 103.144078 5.92783505 84.4518856 20.3446292"></polygon>
+        <g id="Partner_ALL" transform="translate(-60.000000, -3920.000000)" fill-rule="nonzero" fill="#FFFFFF">
+            <g id="Page-Copy-2" transform="translate(0.000000, 3696.000000)">
+                <g id="Group-9" transform="translate(60.000000, 224.000000)">
+                    <path d="M45.8803842,20.7991751 L61.5816705,41.6354859 L56.2424781,45.658856 L40.5411917,24.8225452 L45.8803842,20.7991751 Z M66.3185683,11.8356492 L77.9273892,0.18565181 L111.14966,33.3622259 L58.8094956,85.6783575 L45.5831746,72.30792 L28.9559115,84.6856804 L0.437390259,47.2972522 L59.7107482,3.17264711 L66.3185683,11.8356492 Z M50.4820098,68.6611017 L58.8075639,77.1135096 L102.810645,33.3603422 L78.1236618,9.29382306 L70.2815508,17.0312091 L88.2292694,40.5610753 L50.4820098,68.6611017 Z M29.8384156,75.8938539 L79.4313457,38.9756072 L58.828244,11.9644736 L9.23531396,48.8827203 L29.8384156,75.8938539 Z" id="Combined-Shape"></path>
                 </g>
             </g>
         </g>

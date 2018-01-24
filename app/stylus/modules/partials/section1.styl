@@ -15,7 +15,7 @@
       padding-top 0
 
 #section1-2
-  background $yellow2
+  background $green
   position relative
   &:after
     pseudo(block, absolute)
@@ -24,6 +24,11 @@
     right 0
     height 50%
     background $blue
+
+#section1-2b
+  background $green
+  +mobile()
+    padding-top 50px
 
 #section1-3
   .ornament
@@ -131,7 +136,7 @@
     padding-top 0
 
 +iphone()
-  #section1-1, #section1-2, #section1-3, #section1-4, #section1-5, #section1-6, #section1-7, #section1-8, #section1-9, #section1-10, #section1-11, #section1-12, #section1-13, #section1-14, #section1-15
+  #section1-1, #section1-2, #section1-2b, #section1-3, #section1-4, #section1-5, #section1-6, #section1-7, #section1-8, #section1-9, #section1-10, #section1-11, #section1-12, #section1-13, #section1-14, #section1-15
     .container
       padding-left 30px
       padding-right 30px

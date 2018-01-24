@@ -1,20 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="88px" height="95px" viewBox="0 0 88 95" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="76px" height="81px" viewBox="0 0 76 81" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 47 (45396) - http://www.bohemiancoding.com/sketch -->
-    <title>museum</title>
+    <title>Combined Shape</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Partner_ALL" transform="translate(-754.000000, -968.000000)" fill-rule="nonzero">
-            <g id="Group-8" transform="translate(754.000000, 972.000000)">
-                <g id="museum">
-                    <polygon id="Shape" stroke="#FFFFFF" stroke-width="6" points="4.63157895 15.7575758 4.63157895 23.6363636 83.3684211 23.6363636 83.3684211 15.7575758 44.3936842 0"></polygon>
-                    <rect id="Rectangle-path" fill="#FFFFFF" x="9.26315789" y="34.2727273" width="6.94736842" height="28.3636364"></rect>
-                    <rect id="Rectangle-path" fill="#FFFFFF" x="30.1052632" y="34.2727273" width="6.94736842" height="28.3636364"></rect>
-                    <rect id="Rectangle-path" fill="#FFFFFF" x="50.9473684" y="34.2727273" width="6.94736842" height="28.3636364"></rect>
-                    <rect id="Rectangle-path" fill="#FFFFFF" x="71.7894737" y="34.2727273" width="6.94736842" height="28.3636364"></rect>
-                    <rect id="Rectangle-path" fill="#FFFFFF" x="4.63157895" y="69.7272727" width="79.8947368" height="7.09090909"></rect>
-                    <rect id="Rectangle-path" fill="#FFFFFF" x="0" y="83.9090909" width="88" height="7.09090909"></rect>
+        <g id="Partner_ALL" transform="translate(-77.000000, -2979.000000)" fill-rule="nonzero" fill="#FFFFFF">
+            <g id="Page-Copy-6" transform="translate(0.000000, 2730.000000)">
+                <g id="Page-Copy">
+                    <g id="museum" transform="translate(77.000000, 249.000000)">
+                        <path d="M1,15.2799557 L38.3509535,0.77754705 L75,15.2948956 L75,27 L1,27 L1,15.2799557 Z M7,19.386711 L7,21 L69,21 L69,19.371771 L38.3290465,7.22245295 L7,19.386711 Z M8,33 L14,33 L14,57 L8,57 L8,33 Z M26,33 L32,33 L32,57 L26,57 L26,33 Z M44,33 L50,33 L50,57 L44,57 L44,33 Z M62,33 L68,33 L68,57 L62,57 L62,33 Z M4,63 L73,63 L73,69 L4,69 L4,63 Z M0,75 L76,75 L76,81 L0,81 L0,75 Z" id="Combined-Shape"></path>
+                    </g>
                 </g>
             </g>
         </g>

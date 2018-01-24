@@ -20,8 +20,8 @@
       height 18px
       padding 0
       margin 12px 0
-      &:first-child, &:last-child, &:nth-child(2), &:nth-child(12), &:nth-child(13), &:nth-last-child(2)
-        display none
+      //&:first-child, &:last-child, &:nth-child(2), &:nth-child(11), &:nth-child(12), &:nth-child(13), &:nth-last-child(2)
+      //  display none
       .fp-tooltip
         background $white
         color $darkred
@@ -60,6 +60,19 @@
           width 12px
           height 12px
           margin 3px
+
+#fullpage + #fp-nav
+  ul
+    li
+      &:nth-child(1), &:nth-child(2), &:nth-child(3), &:nth-last-child(1),&:nth-last-child(2),&:nth-last-child(3),&:nth-last-child(4)
+        display none
+
+#fullpage2 + #fp-nav
+  ul
+    li
+      &:nth-child(1), &:nth-child(2), &:nth-last-child(1),&:nth-last-child(2)
+        display none
+
 
 #fp-nav ul li a.active span, #fp-nav ul li:hover a span, #fp-nav ul li:hover a.active span
   border 4px solid $white
